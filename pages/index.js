@@ -10,8 +10,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="bg-indigo-900 h-[90vh]">
-
+      <main className="flex-auto">
+        <div className="h-screen overflow-hidden bg-[#ddddfd] text-gray-300  pt-32  ">
+          <h1 className="text-6xl m-12">Yanisa Poongthaisong</h1>
+          <p className="text-xl">
+            This is portfolio by Yanisa
+          </p>
+        </div>
       </main>
       <Footer />
     </div>

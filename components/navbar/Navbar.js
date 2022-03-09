@@ -11,12 +11,12 @@ function  Navbar() {
   };
 
   return (
-    <nav class="flex items-center justify-between flex-wrap bg-black p-6">
-      <div class="flex items-center flex-shrink-0 text-white mr-6">
+    <nav className="sticky flex items-center justify-between flex-wrap p-6 bg-black top-0 z-40  backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] bg-white/95 supports-backdrop-blur:bg-white/60 dark:bg-transparent">
+      <div className="flex items-center flex-shrink-0 text-black">
         <Image src='/logo.png' width='54' height='54' />
       </div>
   <button
-          className=' inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
+          className=' inline-flex p-3 hover:bg-gray-100 rounded lg:hidden text-black ml-auto hover:text-black outline-none'
           onClick={handleClick}
         >
           <svg
@@ -38,27 +38,27 @@ function  Navbar() {
         <div
           className={`${
             active ? '' : 'hidden'
-          }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
+          }   w-full lg:inline-flex lg:flex-grow lg:w-auto pt-4 text-center`}
         >
-          <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
+          <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto  transition transform duration-200 ease-out'>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white '>
-                Home
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-black hover:text-white  transition transform duration-200 ease-out'>
+                About
               </a>
             </Link>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                Services
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-black  hover:text-white  transition transform duration-200 ease-out'>
+                Work
               </a>
             </Link>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                About us
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-black  hover:text-white  transition transform duration-200 ease-out'>
+                Archive
               </a>
             </Link>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                Contact us
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-black  hover:text-white  transition transform duration-200 ease-out'>
+                Contact
               </a>
             </Link>
           </div>
