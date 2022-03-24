@@ -79,8 +79,36 @@ function About() {
     </div>
       </div>
     {/* Right Grid */}
-        <div>
-        
+        <div className="mx-auto py-10 pb-40 lg:-ml-32">
+            <p className="lg:text-lg mb-10">
+                My name is " Dookdik " or Yanisa Poongthaisong. 
+                Enjoy getting information from anywhere. 
+                Currently self studying Japanese language.      
+                Always browse for ideas even when resting.
+                <br /> 
+                I code fror web, and mostly passionate with design for user experience and interface.
+                
+            </p>
+            {/* skills */}
+            <h2  className="lg:text-2xl text-indigo-300 font-extrabold">
+                SKILLS
+            </h2>
+            <h3 className=" lg:text-lg text-indigo-600 font-bold lg:pl-32 my-3">Programing Languages</h3>
+            <h5 className="lg:w-72 lg:pl-32">ReactJS JavaScript Python CSS HTML Solidity</h5> 
+            <h3 className=" lg:text-lg text-indigo-600 font-bold lg:pl-32 my-3">Design</h3>
+            <h5  className="lg:w-72 lg:pl-32">Design System Prototyping Wireframing  InfomationArchitecture <br />Databae Design</h5> 
+            <h3 className=" lg:text-lg text-indigo-600 font-bold lg:pl-32 my-3">Tools and Frameworks</h3>
+            <h5  className="lg:w-72 lg:pl-32">Figma Next.js Django  PWA TailwindCSS scss </h5> 
+
+            {/* education */}
+            <h2  className="mt-6 lg:text-2xl text-indigo-300 font-extrabold ">
+                EDUCATION
+            </h2>
+
+            {/* certs */}
+            <h2  className="mt-6 lg:text-2xl text-indigo-300 font-extrabold">
+                CERTIFICATES
+            </h2>
         </div>
     </div>
   </section>
