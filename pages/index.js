@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import  Navbar  from '../components/navbar/Navbar'
 import Footer from '../components/footer/Footer'
-
+import FeaturedProjects from '../components/FeaturedProjects'
 export default function Home() {
   return (
     <div>
@@ -17,6 +17,7 @@ export default function Home() {
             This is portfolio by Yanisa
           </p>
         </div>
+          <FeaturedProjects />
       </main>
       <Footer />
     </div>
