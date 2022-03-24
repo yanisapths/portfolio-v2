@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
+import { DownloadIcon } from '@heroicons/react/solid'
 
 function  Navbar() {
   const [active, setActive] = useState(false);
@@ -41,7 +42,7 @@ function  Navbar() {
           }   w-full lg:inline-flex lg:flex-grow lg:w-auto pt-4 text-center`}
         >
           <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto  transition transform duration-200 ease-out'>
-            <Link href='/'>
+            <Link href='/about'>
               <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold text-xl items-center justify-center hover:text-indigo-400  hover:font-extrabold transition transform duration-300 ease-out'>
                 About
               </a>

@@ -14,7 +14,9 @@ const data = {
         },
     ],
     socialLinks: {
-        linkedin: "https://www.linkedin.com/in/yanisa-poongthaisong-148629125/"
+        linkedin: "https://www.linkedin.com/in/yanisa-poongthaisong-148629125/",
+        medium: "	https://medium.com/@yanisa-poongthaisong",
+        github: "https://github.com/yanisapths",
     }
 }
 

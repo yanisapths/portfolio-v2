@@ -5,9 +5,9 @@ import { ArrowRightIcon} from '@heroicons/react/solid'
 function FeaturedProjects() {
     
   return (
-    <section className="mx-3 lg:mx-5 bg-[#070738]">
+    <section className="mx-3 lg:mx-5  bg-[#070738]">
     <div className=" max-w-6xl mx-auto h-48 bg-[#070738]">
-        <h1  className="flex text-indigo-400 text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+        <h1  className="flex text-emerald-400 text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
           Projects
         <Link href="/projects">
           <ArrowRightIcon className="flex lg:mt-14 lg:ml-10 lg:h-10 lg:w-10 h-5 w-5 ml-3 mt-4 -m-0 cursor-pointer transform hover:translate-x-2 transition duration-300" />

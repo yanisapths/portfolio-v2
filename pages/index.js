@@ -3,6 +3,7 @@ import  Navbar  from '../components/navbar/Navbar'
 import Footer from '../components/footer/Footer'
 import FeaturedProjects from '../components/FeaturedProjects'
 import Hero from '../components/Hero'
+
 export default function Home() {
   return (
     <div>
