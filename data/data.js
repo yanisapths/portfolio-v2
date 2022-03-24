@@ -12,7 +12,10 @@ const data = {
             title: "Discord Quiz Bot",
             imgUrl: "/asset/discord-bot.png",
         },
-    ]
+    ],
+    socialLinks: {
+        linkedin: "https://www.linkedin.com/in/yanisa-poongthaisong-148629125/"
+    }
 }
 
 
