@@ -1,5 +1,5 @@
 import React from 'react'
-import Projects from '../components/FeaturedProjects.js'
+import Projects from '../components/Projects.js'
 import Layout from '../components/Layout.js'
 
 
@@ -11,4 +11,4 @@ function projects() {
   )
 }
 
-export default projects
+export default projects;

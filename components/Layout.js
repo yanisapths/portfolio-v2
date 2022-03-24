@@ -4,6 +4,7 @@ import Footer from "../components/footer/Footer"
 import Head from "next/head"
 
 function Layout({children}) {
+
     const meta ={
         title: "Yanisa Poongthaisong",
     }
@@ -13,10 +14,8 @@ function Layout({children}) {
             <title>{meta.title}</title>
         </Head>
         <Navbar />
-        <main className="flex-auto">
-            <div className="h-screen overflow-hidden bg-[#070738] text-gray-300  ">
+        <main className="flex-auto w-full h-full overflow-hidden bg-[#070738] text-gray-300 ">
                  <div>{children}</div>
-            </div>
         </main>
         <Footer />
     </div>

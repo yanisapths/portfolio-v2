@@ -1,4 +1,3 @@
-import data from "../data/data";
 import React from 'react'
 
 function FeaturedProjects() {
@@ -24,23 +23,21 @@ function FeaturedProjects() {
                 alt="portfolio"
                 className="scale-125 transform hover:scale-150 transition duration-2000 ease-out"
               />
-              <a  href="https://daily-poisson.vercel.app" className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-               Software Engineer
+              <a  href="https://daily-poisson.vercel.app" className="absolute top-10 left-5 text-[#ffffff] font-bold text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full px-4 py-3 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
+               Daily poisson
               </a>
             </div>
             <div className="lg:basis-2/3 basis-1/2 ">
             <p className="m-5 lg:mt-20 lg:ml-14 text-white text-lg lg:text-4xl ">
-              User Interface Design
+              UI Design
               </p>
               <p className="m-5 lg:m-14 lg:text-lg text-white text-xs ">
-               I worked as a designer and help the team designed, wireframing, and prototyping with Figma for daily-poisson web application.
-                Daily Poisson is a challenge for daily where you can play quiz or create one by yourself to encourage anyone to have fun learning come with ranking score making it more competitive.  
+               Designed, wireframing, and prototyping with Figma for daily-poisson web app.
               </p>
             </div>
           </div>
              {/* Single card */}
              <div
-            href="https://o-live.vercel.app"
             className=" lg:w-full lg:-mt-12 flex flex-row col-span-3 shadow-2xl" 
           >
             <div className="lg:basis-1/3 basis-1/2 relative overflow-hidden">
@@ -49,9 +46,9 @@ function FeaturedProjects() {
                 alt="portfolio"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
-              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-               Project Survey 
-              </h1>
+              <a  href="https://o-live.vercel.app"  className="absolute top-10 left-5 text-[#ffffff] font-bold text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full px-4 py-3 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
+               Olive Platform
+              </a>
               <h1 className=" absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
                 on going
               </h1>
@@ -64,12 +61,9 @@ function FeaturedProjects() {
                 Design a system to help the elders and family to browse local care places with difficulties when no one is around with them. 
               </p>
             </div>
-              
-              
           </div>
              {/* Single card */}
              <div
-             href="#"
             className="w-full lg:mt-12 lg:flex  flex-row  col-span-3 shadow-2xl"
           >
             <div className="basis-1/2 relative overflow-hidden">
@@ -78,7 +72,7 @@ function FeaturedProjects() {
                 alt="portfolio"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
-              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
+              <h1 className="absolute top-10 left-5 text-[#ffffff] font-bold text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full px-4 py-3 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
                Just for fun
               </h1>
             </div>
