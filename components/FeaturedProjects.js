@@ -5,18 +5,18 @@ import { ArrowRightIcon} from '@heroicons/react/solid'
 function FeaturedProjects() {
     
   return (
-    <section className="mx-3 lg:mx-5  bg-[#070738]">
+    <section className="mx-8 lg:mx-5  md:mx-10 bg-[#070738]">
     <div className=" max-w-6xl mx-auto h-48 bg-[#070738]">
-        <h1  className="flex text-emerald-400 text-5xl md:text-9xl font-bold lg:py-20 xl:py-20 p-0 text-center md:text-left">
+        <h1  className="flex text-emerald-400 text-5xl md:text-9xl font-bold  lg:py-20 xl:py-20 p-0 text-center md:text-left">
           Projects
         <Link href="/projects">
-          <ArrowRightIcon className="flex lg:mt-14 lg:ml-10 lg:h-10 lg:w-10 h-5 w-5 ml-3 mt-4 -m-0 cursor-pointer transform hover:translate-x-2 transition duration-300" />
+          <ArrowRightIcon className="flex lg:mt-14 lg:ml-10 md:mt-12 md:ml-10 lg:h-10 lg:w-10 md:w-14 md:h-14 h-5 w-5 ml-3 mt-4 -m-0 cursor-pointer transform hover:translate-x-2 transition duration-300" />
         </Link>
         </h1>
     </div>
 
     {/* Grid starts here */}
-    <div className="bg-[#070738] justify-center align-center -mt-40 xl:mt-0 lg:mt-0">
+    <div className="bg-[#070738] justify-center align-center -mt-40 xl:mt-0 lg:mt-0 md:-mt-16">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
            {/* Single card */}
            <div
@@ -29,16 +29,16 @@ function FeaturedProjects() {
                 className="scale-125 transform hover:scale-150 transition duration-2000 ease-out"
               />
               <a  href="https://daily-poisson.vercel.app" >
-                <h3 className="absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
+                <h3 className="absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl  md:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 md:px-4 md:py-3 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
                     Daily poisson
                 </h3>
               </a>
             </div>
             <div className="lg:basis-2/3 basis-1/2 ">
-            <p className="m-5 lg:mt-20 lg:ml-14 text-white text-lg lg:text-4xl ">
+            <p className="m-5 lg:mt-20 lg:ml-14 text-white text-lg lg:text-4xl md:text-4xl md:mt-20 md:ml-14 ">
               UI Design
               </p>
-              <p className="m-5 lg:m-14 lg:text-lg text-white text-xs ">
+              <p className="m-5 lg:m-14 lg:text-lg md:text-xl  md:m-14 text-white text-xs ">
                Designed, wireframing, and prototyping with Figma for daily-poisson web app.
               </p>
             </div>
@@ -54,7 +54,7 @@ function FeaturedProjects() {
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
               <Link  href="/projects/oliveplatform"  >
-                <h3 className="absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
+                <h3 className="absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl md:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 md:px-4 md:py-3 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
                     Olive Platform
                 </h3>
               </Link>
@@ -63,10 +63,10 @@ function FeaturedProjects() {
               </h1>
             </div>
             <div className="lg:basis-2/3 basis-1/2 ">
-            <p className="m-5 lg:mt-20 lg:ml-14 text-white text-lg lg:text-4xl">
+            <p className="m-5 lg:mt-20 lg:ml-14 text-white text-lg lg:text-4xl  md:text-4xl md:mt-20 md:ml-14">
                Platform App
               </p>
-              <p className="m-5 lg:m-14 lg:text-lg text-white text-xs">
+              <p className="m-5 lg:m-14 lg:text-lg md:text-xl md:m-14  text-white text-xs">
                 Design a system to help the elders and family to browse local care places with difficulties when no one is around with them. 
               </p>
             </div>
@@ -82,16 +82,16 @@ function FeaturedProjects() {
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
               <a href="https://python.plainenglish.io/build-discord-quizbot-with-python-and-deploy-1-44dec1250a37">
-                  <h3  className="cursor-pointer absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
+                  <h3  className="cursor-pointer absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl  md:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 md:px-4 md:py-3  hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
                       Just for fun
                   </h3>
               </a>
             </div>
             <div className=" basis-1/2">
-              <p className="m-5  lg:ml-14 text-white text-lg lg:text-4xl">
+              <p className="m-5  lg:ml-14 text-white text-lg lg:text-4xl  md:text-4xl md:mt-20 md:ml-14">
               Discord Quiz Bot
               </p>
-              <p className="m-5 lg:m-14 lg:text-lg text-white text-xs">
+              <p className="m-5 lg:m-14 lg:text-lg md:text-xl md:m-14 text-white text-xs">
                 Developed discord bot for helping with learning using Python on Django API framework, deploy on Heroku.
               </p>
             </div>

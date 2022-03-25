@@ -67,7 +67,7 @@ function About() {
         <h4 className="text-lg font-bold pl-2 ">Linkedin</h4>
         </a>
     </div>
-    <div className="border-2 bg-black/40 pl-3 w-60  xl:pl-18 lg:pl-18 ml-10 lg:ml-0 xl:ml-0 lg:w-72 xl:w-72 md:w-72  justify-center  mt-8 cursor-pointer transform hover:translate-x-2 transition duration-300 shadow-white shadow-lg rounded-full px-0 lg:px-7 xl:px-7 py-2 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400"
+    <div className="border-2 bg-black/40 pl-3 w-60  xl:pl-18 lg:pl-18 ml-10 lg:ml-0 xl:ml-0 lg:w-72 xl:w-72 md:w-60  justify-center  mt-8 cursor-pointer transform hover:translate-x-2 transition duration-300 shadow-white shadow-lg rounded-full px-0 lg:px-7 xl:px-7 py-2 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400"
        
     >
         <Mailto email="yanisa21@live.com" subject="Hello Yanisa!" body="">
@@ -132,9 +132,9 @@ function About() {
             <div className="flex flex-row">
               <div className="basis-1/3 ">
               <h3 className=" lg:text-md text-indigo-700 lg:pl-10  mt-3">1 Dec 2021</h3>
-              <h3 className=" lg:text-md text-indigo-700 lg:pl-10  mt-40 xl:mt-28 lg:mt-28">5 Dec 2021</h3>
-              <h3 className=" lg:text-md text-indigo-700 lg:pl-10  mt-28  xl:mt-28 lg:mt-24">12 Dec 2021</h3>
-              <h3 className=" lg:text-md text-indigo-700 lg:pl-10  mt-40  xl:mt-24 lg:mt-24">30 Jan 2021</h3>
+              <h3 className=" lg:text-md text-indigo-700 lg:pl-10  mt-40 xl:mt-28 lg:mt-28 md:mt-24">5 Dec 2021</h3>
+              <h3 className=" lg:text-md text-indigo-700 lg:pl-10  mt-28  xl:mt-28 lg:mt-24 md:mt-20">12 Dec 2021</h3>
+              <h3 className=" lg:text-md text-indigo-700 lg:pl-10  mt-40  xl:mt-24 lg:mt-24 md:mt-24">30 Jan 2021</h3>
               </div>
               <div className="basis-2/3 ">
               <h3 className=" lg:text-lg text-indigo-600 font-bold mt-3 xl:mt-0 lg:mt-0  ">CompTIA Network+ (N10-008) Full Course & Practice Exam</h3>
