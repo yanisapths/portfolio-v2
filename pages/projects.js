@@ -1,6 +1,6 @@
 import React from 'react'
 import Projects from '../components/Projects.js'
-import Layout from '../components/Layout.js'
+import Layout from '../components/ui/Layout.js'
 
 
 function projects() {

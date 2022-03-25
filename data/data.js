@@ -8,7 +8,7 @@ const data = {
         },
         {
             id:2,
-            link: "https://o-live.vercel.app",
+            link: "/projects/oliveplatform",
             title: "Olive Platform",
             imgUrl: "/asset/project-survey.png",
         },

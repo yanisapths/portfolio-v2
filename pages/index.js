@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import  Navbar  from '../components/navbar/Navbar'
-import Footer from '../components/footer/Footer'
+import  Navbar  from '../components/ui/Navbar'
+import Footer from '../components/ui/Footer'
 import FeaturedProjects from '../components/FeaturedProjects'
 import Hero from '../components/Hero'
 

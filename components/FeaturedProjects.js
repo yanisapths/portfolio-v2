@@ -53,11 +53,11 @@ function FeaturedProjects() {
                 alt="portfolio"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
-              <a  href="https://o-live.vercel.app"  >
+              <Link  href="/projects/oliveplatform"  >
                 <h3 className="absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
                     Olive Platform
                 </h3>
-              </a>
+              </Link>
               <h1 className=" absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
                 on going
               </h1>
