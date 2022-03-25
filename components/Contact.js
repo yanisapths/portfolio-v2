@@ -11,7 +11,7 @@ function Contact() {
     return <a href={`mailto:${email}${params}`}>{children}</a>;
   };
   return (
-    <section className=" mx-8 bg-[#070738]">
+    <section className=" mx-8 bg-[#070738] ">
     <div className="max-w-6xl mx-auto h-48 bg-[#070738]">
       <h1 className="lg:pl-8 xl:pl-0 text-lime-400 text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
         Contact
