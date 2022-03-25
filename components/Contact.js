@@ -17,7 +17,7 @@ function Contact() {
         Contact
       </h1>
       <div className="flex flex-row">
-      <div className="absolute lg:hidden xl:hidden -mt-28 pl-24 ">
+      <div className="absolute lg:hidden xl:hidden -mt-28 pl-24 sm:hidden ">
               <Image src="/asset/hi2.png" width={500} height={900} className=" "/>
           </div>
         <div className="basis-1/3">
@@ -51,7 +51,7 @@ function Contact() {
         <h4 className="text-lg font-bold pl-2 ">Linkedin</h4>
         </a>
     </div>
-    <div className="border-2 bg-black/40 pl-3 w-60  xl:pl-18 lg:pl-18 ml-10  lg:w-80 xl:w-80 md:w-72  justify-center  mt-8 cursor-pointer transform hover:translate-x-2 transition duration-300 shadow-white shadow-lg rounded-full px-0 lg:px-12 xl:px-12 py-1 lg:py-2 xl:py-2 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400"
+    <div className="border-2 bg-black/40 pl-3 w-60  xl:pl-18 lg:pl-18 ml-10  md:w-60 lg:w-80 xl:w-80  justify-center  mt-8 cursor-pointer transform hover:translate-x-2 transition duration-300 shadow-white shadow-lg rounded-full px-0 lg:px-12 xl:px-12 py-1 lg:py-2 xl:py-2 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400"
        
        >
            <Mailto email="yanisa21@live.com" subject="Hello Yanisa!" body="">
@@ -59,7 +59,7 @@ function Contact() {
            </Mailto>
        </div>
         </div>
-        <div className=" lg:relative xl:relative xl:basis-2/3 lg:basis-2/3 pl-60 lg:-mt-60 xl:pl-80 xl:-mt-80 ">
+        <div className=" md:relative lg:relative xl:relative xl:basis-2/3 lg:basis-2/3 pl-60 lg:-mt-60 xl:pl-80 xl:-mt-80 md:pl-36 md:-mt-52 ">
               <Image src="/asset/hi2.png" width={500} height={900} className=" "/>
           </div>
       </div>
