@@ -18,7 +18,7 @@ function Olive() {
             <Link
                 href="/projects/"
                 >
-                <h4 className="text-lg font-bold pl-6">View More Projects</h4>
+                <h4 className="lg:text-lg xl:text-lg text-md font-bold pl-6 ">View More Projects</h4>
             </Link>
          </div>
           {/* <div className=" bg-sky-600 ">
