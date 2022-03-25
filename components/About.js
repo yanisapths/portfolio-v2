@@ -81,7 +81,7 @@ function About() {
     {/* Right Grid */}
         <div className="mx-auto xl:py-10 lg:py-10 pb-40 lg:-ml-32 xl:-ml-72 ">
             <p className="lg:text-lg mb-10 xl:w-4/5 ">
-                My name is " Dookdik " or Yanisa Poongthaisong. 
+                My name is  Dookdik  or Yanisa Poongthaisong. 
                 Enjoy getting information from anywhere. 
                 Currently self studying Japanese language.      
                 Always browse for ideas even when resting.
@@ -154,7 +154,7 @@ function About() {
                       >
                       <h4 className="text-md">View Cert</h4>
                       </a> 
-              <h3 className=" lg:text-lg text-indigo-600 font-bold mt-6 xl:mt-12"> Ethereum and Solidity: The Complete Developer's Guide</h3>
+              <h3 className=" lg:text-lg text-indigo-600 font-bold mt-6 xl:mt-12"> Ethereum and Solidity: The Complete Developers Guide</h3>
                 <h5 className=" ">As taught by Stephen Grider on Udemy</h5> 
                 <a
                     href={data.cert.ether}

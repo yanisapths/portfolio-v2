@@ -1,14 +1,20 @@
 const data = {
     projects: [
         {
+            id:1,
+            link: "https://daily-poisson.vercel.app",
             title: "Daily Poisson",
             imgUrl: "/asset/SE-design.png",
         },
         {
+            id:2,
+            link: "https://o-live.vercel.app",
             title: "Olive Platform",
             imgUrl: "/asset/project-survey.png",
         },
         {
+            id:3,
+            link: "https://python.plainenglish.io/build-discord-quizbot-with-python-and-deploy-1-44dec1250a37",
             title: "Discord Quiz Bot",
             imgUrl: "/asset/discord-bot.png",
         },

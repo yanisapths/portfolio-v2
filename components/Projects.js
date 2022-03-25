@@ -3,9 +3,10 @@ import React from 'react'
 
 function Projects() {
     
-    const ProjectCard = ( {title , imgUrl} ) => {
+    const ProjectCard = ( {title , imgUrl , link , id} ) => {
         return (
-            <div className="relative overflow-hidden">
+          <a href={link} id={id} className="w-full block shadow-2xl">
+            <div  className="relative overflow-hidden">
               <div className="h-72 object-cover">
                 <img
                   src={imgUrl}
@@ -17,6 +18,7 @@ function Projects() {
                 {title}
               </h1>
             </div>
+          </a>
           
         );
     };
@@ -30,10 +32,12 @@ function Projects() {
     {/* Grid starts here */}
     <div className="bg-[#070738]">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
-        {data.projects?.map((proj, idx) => (
+        {data.projects?.map((proj , key) => (
           <ProjectCard
             title={proj.title}
             imgUrl={proj.imgUrl}
+            link={proj.link}
+            key={proj.id}
           />
         ))}
       </div>

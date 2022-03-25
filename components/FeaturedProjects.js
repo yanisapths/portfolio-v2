@@ -28,8 +28,10 @@ function FeaturedProjects() {
                 alt="portfolio"
                 className="scale-125 transform hover:scale-150 transition duration-2000 ease-out"
               />
-              <a  href="https://daily-poisson.vercel.app" className="absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
-               Daily poisson
+              <a  href="https://daily-poisson.vercel.app" >
+                <h3 className="absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
+                    Daily poisson
+                </h3>
               </a>
             </div>
             <div className="lg:basis-2/3 basis-1/2 ">
@@ -51,8 +53,10 @@ function FeaturedProjects() {
                 alt="portfolio"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
-              <a  href="https://o-live.vercel.app"  className="absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
-               Olive Platform
+              <a  href="https://o-live.vercel.app"  >
+                <h3 className="absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
+                    Olive Platform
+                </h3>
               </a>
               <h1 className=" absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
                 on going
@@ -77,8 +81,10 @@ function FeaturedProjects() {
                 alt="portfolio"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
-              <a href="https://python.plainenglish.io/build-discord-quizbot-with-python-and-deploy-1-44dec1250a37" className="cursor-pointer absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
-               Just for fun
+              <a href="https://python.plainenglish.io/build-discord-quizbot-with-python-and-deploy-1-44dec1250a37">
+                  <h3  className="cursor-pointer absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
+                      Just for fun
+                  </h3>
               </a>
             </div>
             <div className=" basis-1/2">

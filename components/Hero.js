@@ -22,7 +22,7 @@ function Hero() {
             Yanisa Poongthaisong
         </h1>
         <h2 className="pt-4 text-indigo-800 font-bold xl:text-5xl text-xl sm:text-2xl lg:text-4xl ">
-            " Dookdik "
+             Dookdik 
         </h2>
         <h3 className="pt-2 text-indigo-400 font-bold  xl:text-7xl text-3xl sm:text-4xl lg:text-6xl ">
               Design <span  ref={textRef} ></span>
