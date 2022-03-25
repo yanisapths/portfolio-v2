@@ -1,5 +1,6 @@
 import React from 'react'
 import data from "../data/data";
+import Image from "next/image";
 
 function Contact() {
   const Mailto = ({ email, subject = '', body = '', children }) => {
@@ -15,7 +16,12 @@ function Contact() {
       <h1 className="lg:pl-8 xl:pl-0 text-lime-400 text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
         Contact
       </h1>
-        {/* Medium */}
+      <div className="flex flex-row">
+      <div className="absolute lg:hidden xl:hidden -mt-28 pl-24 ">
+              <Image src="/asset/hi2.png" width={500} height={900} className=" "/>
+          </div>
+        <div className="basis-1/3">
+                     {/* Medium */}
     <div className="lg:pl-10 ">
         <a
         href={data.socialLinks.medium}
@@ -52,7 +58,13 @@ function Contact() {
                    <h4 className="text-lg font-bold p-2">📧 yanisa21@live.com</h4>
            </Mailto>
        </div>
+        </div>
+        <div className=" lg:relative xl:relative xl:basis-2/3 lg:basis-2/3 pl-60 lg:-mt-60 xl:pl-80 xl:-mt-80 ">
+              <Image src="/asset/hi2.png" width={500} height={900} className=" "/>
+          </div>
+      </div>
    
+  
     </div>
     </section>
   )
