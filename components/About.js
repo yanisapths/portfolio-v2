@@ -43,7 +43,7 @@ function About() {
         href={data.socialLinks.medium}
         className="inline-flex bg-black/40 w-60 ml-10 lg:ml-0 xl:ml-0 lg:w-72 xl:w-72 justify-center  border-2 mt-8 cursor-pointer transform hover:translate-x-2 transition duration-300 shadow-white shadow-lg rounded-full px-7 py-2  hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400"
         >
-        <svg width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 24h-24v-24h24v24zm-4.03-5.649v-.269l-1.247-1.224c-.11-.084-.165-.222-.142-.359v-8.998c-.023-.137.032-.275.142-.359l1.277-1.224v-.269h-4.422l-3.152 7.863-3.586-7.863h-4.638v.269l1.494 1.799c.146.133.221.327.201.523v7.072c.044.255-.037.516-.216.702l-1.681 2.038v.269h4.766v-.269l-1.681-2.038c-.181-.186-.266-.445-.232-.702v-6.116l4.183 9.125h.486l3.593-9.125v7.273c0 .194 0 .232-.127.359l-1.292 1.254v.269h6.274z"/></svg>
+        <svg width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M24 24h-24v-24h24v24zm-4.03-5.649v-.269l-1.247-1.224c-.11-.084-.165-.222-.142-.359v-8.998c-.023-.137.032-.275.142-.359l1.277-1.224v-.269h-4.422l-3.152 7.863-3.586-7.863h-4.638v.269l1.494 1.799c.146.133.221.327.201.523v7.072c.044.255-.037.516-.216.702l-1.681 2.038v.269h4.766v-.269l-1.681-2.038c-.181-.186-.266-.445-.232-.702v-6.116l4.183 9.125h.486l3.593-9.125v7.273c0 .194 0 .232-.127.359l-1.292 1.254v.269h6.274z"/></svg>
         <h4 className="text-lg font-bold pl-2 ">Blog</h4>
         </a>
     </div>
@@ -94,9 +94,9 @@ function About() {
                 SKILLS
             </h2>
             <div className="flex flex-row">
-              <div class="basis-1/3 ">
+              <div className="basis-1/3 ">
               </div>
-              <div class="basis-2/3 ">
+              <div className="basis-2/3 ">
                 <h3 className=" lg:text-lg text-indigo-600 font-bold">Programing Languages</h3>
                 <h5 className="">ReactJS JavaScript Python CSS HTML Solidity</h5> 
                 <h3 className=" lg:text-lg text-indigo-600 font-bold">Design</h3>
@@ -111,12 +111,12 @@ function About() {
                 EDUCATION
             </h2>
             <div className="flex flex-row">
-              <div class="basis-1/3 ">
+              <div className="basis-1/3 ">
               <h3 className=" lg:text-md text-indigo-700 lg:pl-10 mt-3">2019 - Present</h3>
               <h3 className=" lg:text-md text-indigo-700 lg:pl-10 mt-12">2016 - 2017</h3>
               <h3 className=" lg:text-md text-indigo-700 lg:pl-10 mt-12">Secondary School</h3>
               </div>
-              <div class="basis-2/3 ">
+              <div className="basis-2/3 ">
               <h3 className=" lg:text-lg text-indigo-600 font-bold  ">Chiang Mai University</h3>
               <h5 className=" ">Information System and Network Engineering , BE</h5> 
               <h3 className=" lg:text-lg text-indigo-600 font-bold mt-6">Cedarburg High School</h3>
@@ -131,13 +131,13 @@ function About() {
                 CERTIFICATES
             </h2>
             <div className="flex flex-row">
-              <div class="basis-1/3 ">
+              <div className="basis-1/3 ">
               <h3 className=" lg:text-md text-indigo-700 lg:pl-10  mt-3">1 Dec 2021</h3>
               <h3 className=" lg:text-md text-indigo-700 lg:pl-10  mt-40 xl:mt-28 lg:mt-28">5 Dec 2021</h3>
               <h3 className=" lg:text-md text-indigo-700 lg:pl-10  mt-28  xl:mt-28 lg:mt-24">12 Dec 2021</h3>
               <h3 className=" lg:text-md text-indigo-700 lg:pl-10  mt-40  xl:mt-24 lg:mt-24">30 Jan 2021</h3>
               </div>
-              <div class="basis-2/3 ">
+              <div className="basis-2/3 ">
               <h3 className=" lg:text-lg text-indigo-600 font-bold mt-3 xl:mt-0 lg:mt-0  ">CompTIA Network+ (N10-008) Full Course & Practice Exam</h3>
                 <h5 className=" ">As taught by Jason Dion on Udemy</h5> 
                 <a
