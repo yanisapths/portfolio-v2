@@ -73,9 +73,8 @@ function About() {
         <Mailto email="yanisa21@live.com" subject="Hello Yanisa!" body="">
                 <h4 className="text-lg font-bold p-2">📧 yanisa21@live.com</h4>
         </Mailto>
-        </div>
-
-     
+    </div>
+    
     </div>
       </div>
     {/* Right Grid */}

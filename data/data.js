@@ -29,6 +29,9 @@ const data = {
         network: "https://www.udemy.com/certificate/UC-621cd0cd-c42c-4dc6-b635-272fec4aac97/",
         ether: "https://www.udemy.com/certificate/UC-50a839aa-d0e4-41af-893e-fc11ea6269e5/",
         cisco: "/asset/cisco.pdf",
+    },
+    user: {
+        resume: "/asset/resume.pdf",
     }
 }
 
