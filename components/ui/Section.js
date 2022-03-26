@@ -17,7 +17,7 @@ function Section() {
 
             <div className="relative flex items-center bg-indigo-200 lg:h-[24rem] xl:h-[24rem]  h-[18rem] w-[16rem] xl:w-[32rem] ml-8 -mt-8 shadow-2xl">
                 <span
-                class="hidden lg:inset-y-0 lg:absolute  lg:w-16 lg:bg-indigo-200 lg:block lg:-left-16 "
+                className="hidden lg:inset-y-0 lg:absolute  lg:w-16 lg:bg-indigo-200 lg:block lg:-left-16 "
                 ></span>
 
                 <div className="p-10 sm:p-16 lg:p-4 ">
