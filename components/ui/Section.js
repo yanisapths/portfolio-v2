@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from "next/link"
 
 function Section() {
   return (
@@ -29,12 +30,12 @@ function Section() {
                     Read general info, some past experience, and my background on this page.
                 </p>
 
-                <a
+                <Link
                     className="inline-block font-bold px-12 py-3 mt-8 text-md text-indigo-200 bg-[#070738] border border-indigo-400 rounded-lg active:text-indigo-400 hover:bg-white hover:text-indigo-400 focus:outline-none focus:ring shadow-indigo-400 shadow-md"
                     href="/about"
                 >
                     Read
-                </a>
+                </Link>
                 </div>
             </div>
             </div>
