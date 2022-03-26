@@ -32,7 +32,7 @@ const data = {
     },
     user: {
         resume: "/asset/resume.pdf",
-    }
+    },
 }
 
 
