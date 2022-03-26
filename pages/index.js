@@ -3,6 +3,7 @@ import  Navbar  from '../components/ui/Navbar'
 import Footer from '../components/ui/Footer'
 import FeaturedProjects from '../components/FeaturedProjects'
 import Hero from '../components/Hero'
+import Section from "../components/ui/Section"
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         {/* <div className="h-screen overflow-hidden bg-[#070738] text-gray-300  pt-32  ">
         </div> */}
         <Hero />
+        <Section />
         <FeaturedProjects />
       </main>
       <Footer />

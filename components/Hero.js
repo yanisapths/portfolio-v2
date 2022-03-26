@@ -15,9 +15,9 @@ function Hero() {
 
   },[])
   return (
-    <div className="lg:flex lg:flex-row block overflow-hidden lg:grid-cols-2">
+    <div className=" block overflow-hidden ">
       {/* Right Text container */}
-        <div className="pt-20 text-left  lg:w-1/2 p-5 pl-14 xl:ml-60 xl:-mr-24 lg:pt-48 ">
+        <div className="pt-20 text-left  p-8 md:pl-40 lg:pl-40  lg:pt-48 xl:pl-[38rem]">
         <h1 className="text-white font-extrabold xl:text-7xl text-3xl  sm:text-6xl lg:text-6xl">
             Yanisa Poongthaisong
         </h1>
@@ -36,9 +36,9 @@ function Hero() {
             
         </div>
         {/* Left Image container */}
-      <div className="p-24 sm:p-32 sm:-mt-16 -mt-10 xl:mt-24 xl:p-0 xl:pl-48  lg:pr-14 lg:mt-32  lg:w-1/2 lg:block  ">
+      {/* <div className="p-24 sm:p-32 sm:-mt-16 -mt-10 xl:mt-24 xl:p-0 xl:pl-48  lg:pr-14 lg:mt-32  lg:w-1/2 lg:block  ">
           <img src="/asset/user.jpg" className="w-full rounded-xl xl:w-[60%] lg:w-[90%]" />
-      </div>
+      </div> */}
     </div>
   )
 }
