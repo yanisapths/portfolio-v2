@@ -12,7 +12,7 @@ function About() {
   return (
     <section className=" mx-8 bg-[#070738]">
     <div className="xl:max-w-8xl  mx-auto h-48 bg-[#070738]">
-      <h1 className="text-indigo-400 text-5xl lg:text-9xl font-bold py-20 text-center md:text-left">
+      <h1 className="text-sky-400 text-5xl lg:text-9xl font-bold py-20 text-center md:text-left">
         About me
       </h1>
     </div>

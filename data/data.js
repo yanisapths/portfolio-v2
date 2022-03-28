@@ -5,19 +5,23 @@ const data = {
             link: "https://daily-poisson.vercel.app",
             title: "Daily Poisson",
             imgUrl: "/asset/SE-design.png",
+            type: "UX/UI Design"
         },
         {
             id:2,
             link: "/projects/oliveplatform",
             title: "Olive Platform",
             imgUrl: "/asset/project-survey.png",
+            type: "Development"
         },
         {
             id:3,
             link: "https://python.plainenglish.io/build-discord-quizbot-with-python-and-deploy-1-44dec1250a37",
             title: "Discord Quiz Bot",
             imgUrl: "/asset/discord-bot.png",
+            type: "Development"
         },
+        
     ],
     socialLinks: {
         linkedin: "https://www.linkedin.com/in/yanisa-poongthaisong-148629125/",

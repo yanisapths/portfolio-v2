@@ -1,11 +1,58 @@
-import data from "../data/data";
-import React from 'react'
+import React,{useState,useEffect} from 'react'
+import ProjectList from "./ProjectList";
+import  {
+  All,
+  design,
+  dev,
+  bot,
+} from "../data/proj"
 
-function Projects() {
-    
-    const ProjectCard = ( {title , imgUrl , link , id} ) => {
+
+function Projects () {
+
+  const [selected, setSelected] = useState("projects");
+  const [data, setData] = useState([]);
+  const list = [
+    {
+      id: "all",
+      title: "All",
+    },
+    {
+      id: "design",
+      title: "UX/UI Design",
+    },
+    {
+      id: "dev",
+      title: "Development"
+    },
+    {
+      id: "bot",
+      title: "Bot"
+    },
+
+  ];
+
+  useEffect(() => {
+    switch (selected) {
+      case "design":
+        setData(design);
+        break;
+      case "dev":
+        setData(dev);
+        break;
+      case "bot":
+        setData(bot);
+        break;
+         break;
+
+      default:
+        setData(All);
+    }
+  }, [selected]);
+
+    const ProjectCard = ( {title , imgUrl , link , id, type} ) => {
         return (
-          <a href={link} id={id} className="w-full block shadow-2xl">
+          <a href={link} id={id} type={type} className="w-full block shadow-2xl">
             <div  className="relative overflow-hidden">
               <div className="h-72 object-cover">
                 <img
@@ -28,20 +75,32 @@ function Projects() {
       <h1 className="text-emerald-400 text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
         Projects
       </h1>
+        <div className="grid grid-cols-1 -mt-12 ">
+          <h4 className="my-3 text-lg  md:text-2xl font-bold">Filter by Type</h4>
+          <div className="flex md:mt-3 lg:mt-3  ">
+            {list.map((item) => (
+              <ProjectList title={item.title}
+              active={selected === item.id}
+              setSelected={setSelected}
+              id={item.id}
+              />
+            ))}
+          </div>
+        </div>
     </div>
-    {/* Grid starts here */}
-    <div className="bg-[#070738]">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
-        {data.projects?.map((proj , key) => (
-          <ProjectCard
-            title={proj.title}
-            imgUrl={proj.imgUrl}
-            link={proj.link}
-            key={proj.id}
-          />
-        ))}
-      </div>
-    </div>
+           {/* Grid starts here */}
+        <div className="bg-[#070738] mt-4 lg:mt-36 md:mt-36">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
+                {data.map( (proj) => (
+                    <ProjectCard
+                    title={proj.title}
+                    imgUrl={proj.imgUrl}
+                    link={proj.link}
+                    key={proj.id}
+                    />
+                ))}
+            </div>
+        </div>
   </section>
   )
 }
