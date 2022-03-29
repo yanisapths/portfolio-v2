@@ -70,7 +70,7 @@ function Projects () {
             </div>
             <h1 className="  bottom-5 left-5 text-indigo-500 bg-black/10  text-sm w-full justify-center p-2 text-right">
                      {tool}
-                  </h1>
+              </h1>
           </a>
           
         );
