@@ -11,25 +11,24 @@ function Section() {
                 <img
                     className="absolute inset-0 object-cover w-full h-full"
                     src="/asset/user.jpg"
-                    alt="Indoors house"
                 />
                 </div>
             </div>
 
-            <div className="relative flex items-center bg-indigo-200 lg:h-[24rem] xl:h-[24rem]   xl:w-[32rem] ml-8 -mt-8 shadow-2xl">
+            <div className="relative flex items-center bg-[#070738] lg:h-[24rem] xl:h-[24rem]   xl:w-[32rem] ml-8 -mt-8 shadow-2xl">
                 <span
-                className="hidden lg:inset-y-0 lg:absolute  lg:w-16 lg:bg-indigo-200 lg:block lg:-left-16 "
+                className="hidden lg:inset-y-0 lg:absolute  lg:w-16 lg:bg-[#070738] lg:block lg:-left-16 "
                 ></span>
 
                 <div className="p-10 sm:p-16 lg:p-4 ">
-                <h2 className="text-2xl font-bold sm:text-3xl">
+                <h2 className="text-2xl font-bold sm:text-3xl text-white">
                    About me
                 </h2>
 
-                <p className="mt-4 text-gray-600 text-lg pr-4">
+                <p className="mt-4 text-lg pr-4 text-white">
                     Read general info, some past experience, and my background on this page.
                 </p>
-                <div   className="cursor-pointer inline-block font-bold px-12 py-3 mt-8 text-md text-indigo-200 bg-[#070738] border border-indigo-400 rounded-lg active:text-indigo-400 hover:bg-white hover:text-indigo-400 focus:outline-none focus:ring shadow-indigo-400 shadow-md">
+                <div   className="cursor-pointer inline-block font-bold px-12 py-3 mt-8 text-md text-indigo-200 bg-[#070738] border border-indigo-700 rounded-lg  hover:bg-indigo-700 hover:text-white active:text-white focus:outline-none focus:ring shadow-indigo-400 shadow-md">
                 <Link
                     href="/about"
                 >
