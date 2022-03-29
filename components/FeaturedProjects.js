@@ -41,7 +41,7 @@ function FeaturedProjects() {
               <p className="m-5 lg:m-14 lg:text-lg md:text-xl  md:m-14 text-white text-xs ">
                Designed, wireframing, and prototyping with Figma for daily-poisson web app.
               </p>
-              <h1 className="pr-6 text-indigo-500 text-sm w-full justify-center pt-16 text-right">
+              <h1 className="pr-6 text-indigo-500 text-sm w-full justify-center pt-16 text-right lg:pt-24">
                     Figma
               </h1>
             </div>
@@ -100,7 +100,7 @@ function FeaturedProjects() {
               <p className="m-5 lg:m-14 lg:text-lg md:text-xl md:m-14 text-white text-xs">
                 Developed discord bot for helping with learning using Python on Django API framework, deploy on Heroku.
               </p>
-              <h1 className="pr-6 text-indigo-500 text-sm w-full justify-center p-4 text-right">
+              <h1 className="pr-6 text-indigo-500 text-sm w-full justify-center p-4 text-right lg:pb-8">
               Django DRF ★ Python ★ Heroku
               </h1>
             </div>

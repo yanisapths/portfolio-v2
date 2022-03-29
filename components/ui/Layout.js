@@ -5,14 +5,14 @@ import Head from "next/head"
 
 function Layout({children}) {
 
-    const meta ={
-        title: "Yanisa Poongthaisong",
-    }
+    // const meta ={
+    //     title: "Yanisa Poongthaisong",
+    // }
   return (
     <div>
-        <Head>
+        {/* <Head>
             <title>{meta.title}</title>
-        </Head>
+        </Head> */}
         <Navbar />
         <main className="flex-auto w-full h-full overflow-hidden bg-[#070738] text-gray-300 ">
                  <div>{children}</div>

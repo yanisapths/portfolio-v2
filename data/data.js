@@ -5,7 +5,7 @@ const data = {
             link: "https://daily-poisson.vercel.app",
             title: "Daily Poisson",
             imgUrl: "/asset/SE-design.png",
-            type: "UX/UI Design"
+            type: "UX/UI Design",
         },
         {
             id:2,
