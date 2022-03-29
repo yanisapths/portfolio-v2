@@ -50,7 +50,7 @@ function Projects () {
     }
   }, [selected]);
 
-    const ProjectCard = ( {title , imgUrl , link , id, type} ) => {
+    const ProjectCard = ( {title , imgUrl , link , id, type,tool} ) => {
         return (
           <a href={link} id={id} type={type} className="w-full block shadow-2xl">
             <div  className="relative overflow-hidden">
@@ -61,10 +61,16 @@ function Projects () {
                   className="transform hover:scale-125 transition duration-2000 ease-out object-cover"
                 />
               </div>
+                 {/* <h1 className=" absolute bottom-5 left-5 text-white  text-sm bg-black/50 w-[90%] justify-center p-2 text-center rounded-full">
+                     {tool}
+                  </h1> */}
               <h1 className="absolute top-10 left-10 text-white font-bold text-xl bg-black/40 border-2 hover:bg-white hover:text-indigo-400 shadow-white shadow-2xl rounded-full px-4 py-3 ">
                 {title}
               </h1>
             </div>
+            <h1 className="  bottom-5 left-5 text-indigo-500 bg-black/10  text-sm w-full justify-center p-2 text-right">
+                     {tool}
+                  </h1>
           </a>
           
         );
@@ -97,6 +103,7 @@ function Projects () {
                     title={proj.title}
                     imgUrl={proj.imgUrl}
                     link={proj.link}
+                    tool={proj.tool}
                     key={proj.id}
                     />
                 ))}
