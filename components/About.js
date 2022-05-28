@@ -104,6 +104,36 @@ function About() {
                 <h5  className="">Figma Next.js Django  PWA TailwindCSS scss </h5> 
               </div>
             </div>
+                {/* Work */}
+            <h2  className="mt-6 lg:text-2xl text-indigo-300 font-extrabold ">
+                 EXPERIENCE
+            </h2>
+            <div className="flex flex-row">
+              <div className="basis-1/3 ">
+              <h3 className=" lg:text-md text-indigo-700 lg:pl-10 mt-3">1 Jun 2022</h3>
+              <h3 className=" lg:text-md text-indigo-700 lg:pl-10 mt-12">1 Apr'22 - 31 May'22</h3>
+              </div>
+              <div className="basis-2/3 ">
+              <h3 className=" lg:text-lg text-indigo-600 font-bold  ">
+                <span style={{background:'linear-gradient(90deg, #008BFF 15.7%, #16C8F7 35.94%, rgba(147, 115, 249, 0.965091) 104.01%, rgba(131, 71, 238, 0.92) 123.02%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  textFillColor: 'transparent' }}>Accenture, </span> 
+                Thailand</h3>
+              <h5 className=" ">Student Intern | Coop</h5> 
+              <h3 className=" lg:text-lg text-indigo-600 font-bold mt-6">
+                <span style={{background:'linear-gradient(90deg, #008BFF 15.7%, #16C8F7 35.94%, rgba(147, 115, 249, 0.965091) 104.01%, rgba(131, 71, 238, 0.92) 123.02%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  textFillColor: 'transparent' }}>
+                   SCB Tech X, </span>
+                Thailand
+                </h3>
+              <h5 className=" ">Platform Service Intern, Frontend</h5> 
+              </div>
+            </div>
 
             {/* education */}
             <h2  className="mt-6 lg:text-2xl text-indigo-300 font-extrabold ">
