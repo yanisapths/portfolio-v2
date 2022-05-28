@@ -111,7 +111,7 @@ function About() {
             <div className="flex flex-row">
               <div className="basis-1/3 ">
               <h3 className=" lg:text-md text-indigo-700 lg:pl-10 mt-3">1 Jun 2022</h3>
-              <h3 className=" lg:text-md text-indigo-700 lg:pl-10 mt-12">1 Apr'22 - 31 May'22</h3>
+              <h3 className=" lg:text-md text-indigo-700 lg:pl-10 mt-12">1 Apr 22 - 31 May 22</h3>
               </div>
               <div className="basis-2/3 ">
               <h3 className=" lg:text-lg text-indigo-600 font-bold  ">

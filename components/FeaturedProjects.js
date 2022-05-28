@@ -20,9 +20,41 @@ function FeaturedProjects() {
     <div className="bg-[#070738] justify-center align-center -mt-40 xl:mt-0 lg:mt-0 md:-mt-16">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
            
-           {/* Single card */}
-           <div
-            className="lg:w-full lg:h-5/6  flex flex-row  col-span-3 shadow-2xl"
+         
+             {/* Single card */}
+             <div
+            className=" lg:w-full lg:h-5/6 flex flex-row col-span-3 shadow-2xl" 
+          >
+            <div className="lg:basis-1/3 basis-1/2 relative overflow-hidden">
+              <img
+                src="/asset/project-survey.png"
+                alt="portfolio"
+                className="transform hover:scale-125 transition duration-2000 ease-out"
+              />
+              <Link  href="/projects/oliveplatform"  >
+                <h3 className="absolute top-10 left-5 text-indigo-400 font-bold lg:text-xl md:text-xl bg-white shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 md:px-4 md:py-3 hover:bg-black/50 hover:border-2 hover:text-white cursor-pointer">
+                    See Process 
+                </h3>
+              </Link>
+              <h1 className=" absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
+                on going
+              </h1>
+            </div>
+            <div className="lg:basis-2/3 basis-1/2 ">
+            <p className="m-5 lg:mt-20 lg:ml-14 text-white text-lg lg:text-4xl  md:text-4xl md:mt-20 md:ml-14">
+               Platform App
+              </p>
+              <p className="m-5 lg:m-14 lg:text-lg md:text-xl md:m-14  text-white text-xs">
+                Design a system to help the elders and family to browse local care places with difficulties when no one is around with them. 
+              </p>
+              <h1 className="pr-6 text-indigo-500 text-sm w-full justify-center p-2 text-right">
+                  Next.js ★ Firebase ★ Tailwind CSS
+              </h1>
+            </div>
+          </div>
+            {/* Single card */}
+            <div
+            className="  lg:w-full lg:-mt-12 flex flex-row  col-span-3 shadow-2xl"
           >
             <div className="lg:basis-1/3 basis-1/2 relative overflow-hidden">
               <img
@@ -46,37 +78,6 @@ function FeaturedProjects() {
               </p>
               <h1 className="pr-6 text-indigo-500 text-sm w-full justify-center pt-16 text-right lg:pt-24">
                     Figma
-              </h1>
-            </div>
-          </div>
-             {/* Single card */}
-             <div
-            className=" lg:w-full lg:-mt-12 flex flex-row col-span-3 shadow-2xl" 
-          >
-            <div className="lg:basis-1/3 basis-1/2 relative overflow-hidden">
-              <img
-                src="/asset/project-survey.png"
-                alt="portfolio"
-                className="transform hover:scale-125 transition duration-2000 ease-out"
-              />
-              <Link  href="/projects/oliveplatform"  >
-                <h3 className="absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl md:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 md:px-4 md:py-3 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400 cursor-pointer">
-                    Jump to Process Section
-                </h3>
-              </Link>
-              <h1 className=" absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
-                on going
-              </h1>
-            </div>
-            <div className="lg:basis-2/3 basis-1/2 ">
-            <p className="m-5 lg:mt-20 lg:ml-14 text-white text-lg lg:text-4xl  md:text-4xl md:mt-20 md:ml-14">
-               Platform App
-              </p>
-              <p className="m-5 lg:m-14 lg:text-lg md:text-xl md:m-14  text-white text-xs">
-                Design a system to help the elders and family to browse local care places with difficulties when no one is around with them. 
-              </p>
-              <h1 className="pr-6 text-indigo-500 text-sm w-full justify-center p-2 text-right">
-                  Next.js ★ Firebase ★ Tailwind CSS
               </h1>
             </div>
           </div>
