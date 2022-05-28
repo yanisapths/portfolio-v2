@@ -1,11 +1,11 @@
 export const All = [
     {
-        id:1,
-        link: "https://daily-poisson.vercel.app",
-        title: "Daily Poisson",
-        imgUrl: "/asset/SE-design.png",
-        type: "UX/UI Design",
-        tool: "Figma",
+        id:4,
+        link: "/projects/scbintern",
+        title: "SCB Tech X Intern",
+        imgUrl: "/asset/scbBanner.png",
+        type: "Internship",
+        tool: "Figma  ★ React.js ",
     },
     {
         id:2,
@@ -14,6 +14,14 @@ export const All = [
         imgUrl: "/asset/project-survey.png",
         type: "Development",
         tool: "Next.js ★ Firebase ★ Tailwind CSS",
+    },
+    {
+        id:1,
+        link: "https://daily-poisson.vercel.app",
+        title: "Daily Poisson",
+        imgUrl: "/asset/SE-design.png",
+        type: "UX/UI Design",
+        tool: "Figma",
     },
     {
         id:3,
@@ -27,12 +35,12 @@ export const All = [
 
 export const design = [
     {
-        id:1,
-        link: "https://daily-poisson.vercel.app",
-        title: "Daily Poisson",
-        imgUrl: "/asset/SE-design.png",
-        type: "UX/UI Design",
-        tool: "Figma",
+        id:4,
+        link: "/projects/scbintern",
+        title: "SCB Tech X Intern",
+        imgUrl: "/asset/scbBanner.png",
+        type: "Internship",
+        tool: "Figma  ★ React.js ",
     },
     {
         id:2,
@@ -42,8 +50,24 @@ export const design = [
         type: "UX/UI Design",
         tool: "Next.js ★ Firebase ★ Tailwind CSS",
     },
+    {
+        id:1,
+        link: "https://daily-poisson.vercel.app",
+        title: "Daily Poisson",
+        imgUrl: "/asset/SE-design.png",
+        type: "UX/UI Design",
+        tool: "Figma",
+    },
 ]
 export const dev = [
+    {
+        id:4,
+        link: "/projects/scbintern",
+        title: "SCB Tech X Intern",
+        imgUrl: "/asset/scbBanner.png",
+        type: "Internship",
+        tool: "Figma  ★ React.js ",
+    },
     {
         id:1,
         link: "/projects/oliveplatform",
