@@ -3,15 +3,6 @@ import Layout from '../../components/ui/Layout.js'
 import Banner from './components/Banner'
 import Head from "next/head"
 import Link from "next/link"
-import { MDXRemote } from 'next-mdx-remote';
-import { serialize } from 'next-mdx-remote/serialize'
-import TableOfContentsItemComponent from './components/TableOfContentsItem.component.tsx'
-import TableOfContentsComponent from './components/TableOfContents.component.tsx'
-
-const components = {
-    TableOfContentsItemComponent,
-    TableOfContentsComponent,
-}
 
 function scbintern({ source }) {
   return (
@@ -40,9 +31,6 @@ function scbintern({ source }) {
                 <h4 className="lg:text-lg xl:text-lg text-md font-bold pl-6 ">View More Projects</h4>
             </Link>
          </div>
-         <div style={{ width: '600px', margin: 'auto' }}>
-            < MDXRemote {...source} components={components} />
-        </div>
     </div>
 </section>
     </Layout>
@@ -50,10 +38,3 @@ function scbintern({ source }) {
 }
 
 export default scbintern
-
-export async function getStaticProps() {
-    // MDX text - can be from a local file, database, anywhere
-    const source =  <>< TableOfContentsComponent />< TableOfContentsItemComponent /></>
-    const mdxSource = await serialize(source)
-    return { props: { source: mdxSource } }
-  }
