@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from "next/link"
 import { ArrowRightIcon} from '@heroicons/react/solid'
+import { ExternalLinkIcon } from '@heroicons/react/solid'
 
 function FeaturedProjects() {
     
@@ -18,6 +19,7 @@ function FeaturedProjects() {
     {/* Grid starts here */}
     <div className="bg-[#070738] justify-center align-center -mt-40 xl:mt-0 lg:mt-0 md:-mt-16">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
+           
            {/* Single card */}
            <div
             className="lg:w-full lg:h-5/6  flex flex-row  col-span-3 shadow-2xl"
@@ -30,7 +32,8 @@ function FeaturedProjects() {
               />
               <a  href="https://daily-poisson.vercel.app" >
                 <h3 className="absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl  md:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 md:px-4 md:py-3 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
-                    Daily poisson
+                   Visit site
+                <ExternalLinkIcon className="inline-flex h- w-7 pl-2 mb-2 cursor-pointer transform " />
                 </h3>
               </a>
             </div>
@@ -57,8 +60,8 @@ function FeaturedProjects() {
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
               <Link  href="/projects/oliveplatform"  >
-                <h3 className="absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl md:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 md:px-4 md:py-3 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
-                    Olive Platform
+                <h3 className="absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl md:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 md:px-4 md:py-3 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400 cursor-pointer">
+                    Jump to Process Section
                 </h3>
               </Link>
               <h1 className=" absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
@@ -88,8 +91,9 @@ function FeaturedProjects() {
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
               <a href="https://python.plainenglish.io/build-discord-quizbot-with-python-and-deploy-1-44dec1250a37">
-                  <h3  className="cursor-pointer absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl  md:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 md:px-4 md:py-3  hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
-                      Just for fun
+                  <h3  className="cursor-pointer absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl  md:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-6 lg:py-3 px-2 md:px-4 md:py-3  hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
+                  Read on Medium
+                  <ExternalLinkIcon className="inline-flex h- w-7 pl-2 mb-2 cursor-pointer transform " />
                   </h3>
               </a>
             </div>
