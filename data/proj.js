@@ -1,12 +1,12 @@
 export const All = [
-    {
-        id:4,
-        link: "/projects/scbintern",
-        title: "SCB Tech X Intern",
-        imgUrl: "/asset/scbBanner.png",
-        type: "Internship",
-        tool: "Figma  ★ React.js ",
-    },
+    // {
+    //     id:4,
+    //     link: "/projects/scbintern",
+    //     title: "SCB Tech X Intern",
+    //     imgUrl: "/asset/scbBanner.png",
+    //     type: "Internship",
+    //     tool: "Figma  ★ React.js ",
+    // },
     {
         id:2,
         link: "/projects/oliveplatform",
@@ -17,7 +17,7 @@ export const All = [
     },
     {
         id:1,
-        link: "https://daily-poisson.vercel.app",
+        link: "https://www.figma.com/file/eJhWs89I5BQ3AkD410qrKl/poisssonUI",
         title: "Daily Poisson",
         imgUrl: "/asset/SE-design.png",
         type: "UX/UI Design",
@@ -34,14 +34,14 @@ export const All = [
 ]
 
 export const design = [
-    {
-        id:4,
-        link: "/projects/scbintern",
-        title: "SCB Tech X Intern",
-        imgUrl: "/asset/scbBanner.png",
-        type: "Internship",
-        tool: "Figma  ★ React.js ",
-    },
+    // {
+    //     id:4,
+    //     link: "/projects/scbintern",
+    //     title: "SCB Tech X Intern",
+    //     imgUrl: "/asset/scbBanner.png",
+    //     type: "Internship",
+    //     tool: "Figma  ★ React.js ",
+    // },
     {
         id:2,
         link: "/projects/oliveplatform",
@@ -52,7 +52,7 @@ export const design = [
     },
     {
         id:1,
-        link: "https://daily-poisson.vercel.app",
+        link: "https://www.figma.com/file/eJhWs89I5BQ3AkD410qrKl/poisssonUI",
         title: "Daily Poisson",
         imgUrl: "/asset/SE-design.png",
         type: "UX/UI Design",
@@ -60,14 +60,14 @@ export const design = [
     },
 ]
 export const dev = [
-    {
-        id:4,
-        link: "/projects/scbintern",
-        title: "SCB Tech X Intern",
-        imgUrl: "/asset/scbBanner.png",
-        type: "Internship",
-        tool: "Figma  ★ React.js ",
-    },
+    // {
+    //     id:4,
+    //     link: "/projects/scbintern",
+    //     title: "SCB Tech X Intern",
+    //     imgUrl: "/asset/scbBanner.png",
+    //     type: "Internship",
+    //     tool: "Figma  ★ React.js ",
+    // },
     {
         id:1,
         link: "/projects/oliveplatform",

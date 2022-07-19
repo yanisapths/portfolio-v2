@@ -62,9 +62,9 @@ function FeaturedProjects() {
                 alt="portfolio"
                 className="scale-125 transform hover:scale-150 transition duration-2000 ease-out"
               />
-              <a  href="https://daily-poisson.vercel.app" >
+              <a  href="https://www.figma.com/file/eJhWs89I5BQ3AkD410qrKl/poisssonUI" >
                 <h3 className="absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl  md:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 md:px-4 md:py-3 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
-                   Visit site
+                   View on Figma
                 <ExternalLinkIcon className="inline-flex h- w-7 pl-2 mb-2 cursor-pointer transform " />
                 </h3>
               </a>
