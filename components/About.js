@@ -1,5 +1,6 @@
 import React from 'react'
 import data from "../data/data";
+import Image from 'next/image';
 
 function About() {
     const Mailto = ({ email, subject = '', body = '', children }) => {
