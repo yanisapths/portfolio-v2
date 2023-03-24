@@ -11,7 +11,6 @@ function oliveplatform() {
               <title>Olive Platform | Yanisa Poongthaisong</title>
           </Head>
         <Banner />
-        {/* <div className="mt-[40vh]"></div> */}
         <Olive  />
     </Layout>
   )

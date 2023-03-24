@@ -33,8 +33,8 @@ function Canva() {
           margin: "0",
         }}
         src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFeEu4Z5TQ&#x2F;view?embed"
-        allowfullscreen="allowfullscreen"
-        allow="fullscreen"
+        allowFullScreen="allowFullScreen"
+        allow="fullScreen"
       ></iframe>
     </div>
   );

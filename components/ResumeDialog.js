@@ -7,22 +7,24 @@ import data from "../data/data";
 function ResumeDialog({ open, handleClose }) {
   return (
     <Dialog onClose={handleClose} open={open}>
-      <Image
-
-        src="/asset/resume.png"
-        width={900}
-        height={1400}
-        objectFit="contain"
-      />
-      <a
-        href={data.user.resume}
-        className="inline-flex bg-black/40 mx-8 justify-center  border-2 mt-8 cursor-pointer transform hover:translate-x-2 transition duration-300 shadow-white shadow-lg rounded-full lg:px-2 lg:py-3  xl:px-2 xl:py-3 py-2 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400"
-      >
-        <DownloadIcon className="lg:h-6 lg:w-6 md:h-6 md:w-6 sm:h-2 sm:w-2 h-6 w-6" />
-        <h4 className="lg:text-lg xl:text-lg text-md font-bold pl-2 ">
-          Download
-        </h4>
-      </a>
+      <div className="bg-black overflow-hidden">
+        <Image
+          src="/asset/resume.png"
+          width={1100}
+          height={1600}
+          objectFit="cover"
+          className="opacity-80 hover:opacity-100"
+        />
+        <div className="absolute top-2/4 w-full text-center">
+          <a
+            href={data.user.resume}
+            className="inline-flex text-white bg-indigo-400 justify-center border-2 cursor-pointer shadow-white shadow-lg rounded-full px-4 py-2 md:px-12 md:p-4 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400"
+          >
+            <DownloadIcon className="h-6 w-6" />
+            <h4 className="text-md font-bold pl-2">Download</h4>
+          </a>
+        </div>
+      </div>
     </Dialog>
   );
 }

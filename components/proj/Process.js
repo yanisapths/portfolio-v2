@@ -9,7 +9,7 @@ function Process() {
     <section className=" mx-8 bg-[#070738]">
          <div className="max-w-8xl mx-auto  overflow-hidden xl:max-w-4xl pb-20 ">
              <h1 className="text-xl mb-4 md:mb-12 font-bold">Team</h1>
-             <div className="grid grid-cols-2 md:mr-[40rem] space-x-2">
+             <div className="flex gap-6 md:gap-8">
                <div>
                 <Image src="/asset/user.jpg" width="80" height="80" className="rounded-full" />
                 <p className="text-xs md:text-lg">Yanisa Poongthaisong</p>

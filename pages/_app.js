@@ -1,8 +1,8 @@
 import "../styles/tailwind.css";
 import "../styles/globals.css";
 import React,{useState} from "react";
-import ResumeButton from '../components/ui/ResumeButton'
 import ResumeDialog from "../components/ResumeDialog"
+import FloatingNavigator from "../components/FloatingNavigator";
 
 function MyApp({ Component, pageProps }) {
   const [open,setOpen] =useState(false);
@@ -15,13 +15,13 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />
-      <ResumeButton handleOpen={handleClickOpen}/>
       {open &&
         <ResumeDialog
         open={open}
         handleClose={handleClose}
       />
       }
+      <FloatingNavigator handleOpen={handleClickOpen} />
     </>
   );
 }
