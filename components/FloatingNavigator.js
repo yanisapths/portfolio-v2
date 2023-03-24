@@ -1,8 +1,15 @@
 import React from "react";
 import data from "../data/data";
-import { DownloadIcon } from "@heroicons/react/solid";
+import EmailIcon from "@mui/icons-material/Email";
 
 function FloatingNavigator({ handleOpen }) {
+  const Mailto = ({ email, subject = "", body = "", children }) => {
+    let params = subject || body ? "?" : "";
+    if (subject) params += `subject=${encodeURIComponent(subject)}`;
+    if (body) params += `${subject ? "&" : ""}body=${encodeURIComponent(body)}`;
+
+    return <a href={`mailto:${email}${params}`}>{children}</a>;
+  };
   return (
     <div className="fixed text-center bottom-6 right-3 md:bottom-8 md:right-8 space-y-4">
       <div
@@ -12,6 +19,14 @@ function FloatingNavigator({ handleOpen }) {
         <p className="text-sm md:text-lg font-extrabold transition-opacity">
           CV
         </p>
+      </div>
+      {/* Mail */}
+      <div>
+        <div className="inline-flex items-center w-10 h-10 md:w-16 md:h-16 justify-center border-2 cursor-pointer transform hover:-translate-y-1 hover:translate-x-1 transition duration-300 shadow-white shadow-md rounded-full bg-[#ffffff] hover:border-2 text-indigo-400">
+          <Mailto email="yanisa21@live.com" subject="Hello Yanisa!" body="">
+            <EmailIcon className="w-6 h-6" />
+          </Mailto>
+        </div>
       </div>
       <div className="">
         <a
@@ -30,6 +45,7 @@ function FloatingNavigator({ handleOpen }) {
           </svg>
         </a>
       </div>
+
       {/* GitHUb */}
       <div className="">
         <a
