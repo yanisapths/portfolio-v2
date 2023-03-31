@@ -12,14 +12,14 @@ function FloatingNavigator({ handleOpen }) {
   };
   return (
     <div className="fixed text-center bottom-6 right-3 md:bottom-8 md:right-8 space-y-4">
-      <div
-        onClick={handleOpen}
+      <a
+         href={data.user.resume}
         className="inline-flex items-center w-10 h-10 md:w-16 md:h-16 justify-center border-2 cursor-pointer transform hover:-translate-y-1 hover:translate-x-1 transition duration-300 shadow-white shadow-md rounded-full hover:bg-white hover:border-2 text-indigo-400"
       >
         <p className="text-sm md:text-lg font-extrabold transition-opacity">
           CV
         </p>
-      </div>
+      </a>
       {/* Mail */}
       <div>
         <div className="inline-flex items-center w-10 h-10 md:w-16 md:h-16 justify-center border-2 cursor-pointer transform hover:-translate-y-1 hover:translate-x-1 transition duration-300 shadow-white shadow-md rounded-full bg-[#ffffff] hover:border-2 text-indigo-400">
