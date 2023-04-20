@@ -17,9 +17,9 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <style>
         @import
-        url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        url(&apos;https://fonts.googleapis.com/css2?family=Montserrat&display=swap&apos;);
         @import
-        url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+        url(&apos;https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap&apos;);
       </style>
       {open && <ResumeDialog open={open} handleClose={handleClose} />}
       <FloatingNavigator handleOpen={handleClickOpen} />
