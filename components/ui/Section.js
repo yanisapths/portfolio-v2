@@ -34,7 +34,7 @@ function Section() {
               </h2>
               <div className="mt-4 text-lg pr-4 text-white">
                 <p className="font-homemade pb-4 lg:text-xl">Call Me Dookdik</p>
-                I'm deigner and developer.
+                I&apos;m deigner and developer.
                 <p>Nice to work together !</p>
                 <SouthIcon />
                 <div className="flex gap-2 pt-2 items-center">
