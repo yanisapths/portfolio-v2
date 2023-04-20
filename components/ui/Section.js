@@ -14,7 +14,7 @@ function Section() {
   };
   return (
     <section>
-      <div className="px-8 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-60 xl:px-96 xl:mt-10 xl:mb-40 md:px-48">
+      <div className="px-8 pt-4 pb-12 mx-auto max-w-screen-2xl sm:px-6 lg:px-60 xl:px-96 xl:mt-10 xl:mb-40 md:px-48">
         <div className="grid grid-cols-1 lg:grid-cols-2 h:-1/6 lg:h-1/6 xl:h-[10rem] ">
           <div className="relative z-10 lg:py-12 md:px-2 lg:px-2 xl:px-2 xl:py-6 px-20">
             <div className="relative h-40 sm:h-80 lg:h-full shadow-2xl shadow-indigo-700">
@@ -25,16 +25,15 @@ function Section() {
             </div>
           </div>
 
-          <div className="relative flex items-center bg-[#070738] lg:h-[24rem] xl:h-[24rem]   xl:w-[32rem] ml-8 -mt-8 shadow-2xl">
+          <div className="relative flex items-center bg-[#070738] lg:h-[24rem] xl:h-[24rem]  xl:w-[32rem] ml-8 -mt-12 shadow-2xl">
             <span className="hidden lg:inset-y-0 lg:absolute  lg:w-16 lg:bg-[#070738] lg:block lg:-left-16 "></span>
 
             <div className="p-10 sm:p-16 lg:p-4 ">
-              <h2 className="text-2xl font-bold sm:text-3xl text-white">
-                Hej 👋
-              </h2>
-              <div className="mt-4 text-lg pr-4 text-white">
-                <p className="font-homemade pb-4 lg:text-xl">Call Me Dookdik</p>
-                I&apos;m a deigner and developer.
+              <div className="pt-12 text-lg pr-4 text-white">
+                <p className="font-homemade pb-4 lg:text-xl text-indigo-400">
+                  Call Me Dookdik
+                </p>
+                I&apos;m a designer and developer.
                 <p>Nice to work together !</p>
                 <SouthIcon />
                 <div className="flex gap-2 pt-2 items-center">

@@ -14,8 +14,6 @@ export default function Home() {
       </Head>
       <Navbar />
       <main className="flex-auto">
-        {/* <div className="h-screen overflow-hidden bg-[#070738] text-gray-300  pt-32  ">
-        </div> */}
         <Hero />
         <Section />
         <FeaturedProjects />
