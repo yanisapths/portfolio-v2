@@ -32,7 +32,6 @@ function Youtube({ link }) {
         width="560"
         height="315"
         src={link}
-        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen="allowFullScreen"
       ></iframe>
