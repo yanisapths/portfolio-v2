@@ -13,7 +13,7 @@ function Banner() {
         className="opacity-40"
       />
       <div className="absolute top-1/4 md:top-1/3 w-full text-center">
-        <p className="text-white text-3xl md:text-5xl  font-black shadow-4xl opacity-100 p-3">
+        <p className="text-white text-3xl md:text-5xl font-black opacity-100 p-3">
           Olive Platform
         </p>
         <button className="px-10 py-4 rounded-full my-3 shadow-xl xl:text-3xl md:text-2xl bsolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl bg-black/50  shadow-white border-2  lg:px-12 lg:py-3  hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">

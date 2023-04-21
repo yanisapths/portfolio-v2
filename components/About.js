@@ -11,8 +11,8 @@ function About() {
     return <a href={`mailto:${email}${params}`}>{children}</a>;
   };
   return (
-    <section className=" mx-8 bg-[#070738]">
-      <div className="xl:max-w-8xl  mx-auto h-48 bg-[#070738]">
+    <section className="mx-8 bg-[#070738]">
+      <div className="bg-[#070738]">
         <h1 className="text-sky-400 text-5xl lg:text-9xl font-bold py-20 text-center md:text-left">
           About me
         </h1>
@@ -114,7 +114,6 @@ function About() {
             Vue.js / Django. My backend ecosystems includes AWS, GCP, Firebase,
             ExpressJS, MongoDB, Docker, and DynamoDB.
           </p>
-          <p></p>
           {/* skills */}
           <h2 className="lg:text-2xl text-indigo-300 font-extrabold">SKILLS</h2>
           <div className="flex flex-row">
@@ -194,19 +193,19 @@ Docker, GCP, AWS, Linux, Ubuntu</h5>
               <h3 className=" lg:text-md text-indigo-700 lg:pl-10 mt-3">
                 2019 - 2023
               </h3>
-              <h3 className=" lg:text-md text-indigo-700 lg:pl-10 mt-16">
+              <h3 className=" lg:text-md text-indigo-700 lg:pl-10 mt-14">
                 2016 - 2017
               </h3>
-              <h3 className=" lg:text-md text-indigo-700 lg:pl-10 mt-12">
+              <h3 className=" lg:text-md text-indigo-700 lg:pl-10 mt-12 lg:mt-16">
                 Secondary School
               </h3>
             </div>
-            <div className="basis-2/3 ">
+            <div className="basis-2/3">
               <h3 className=" lg:text-lg text-indigo-600 font-bold">
-                Chiang Mai University
+              Chiang Mai University 
               </h3>
               <h5 className=" ">
-               2nd Class Hornour GPA 3.46
+              2nd Class Hornour GPA 3.46
               </h5>
               <h5 className=" ">
               B.Eng in Information Systems and Network Engineering
@@ -215,7 +214,7 @@ Docker, GCP, AWS, Linux, Ubuntu</h5>
                 Cedarburg High School
               </h3>
               <h5 className=" ">AFS Exchange student</h5>
-              <h3 className=" lg:text-lg text-indigo-600 font-bold  mt-6">
+              <h3 className=" lg:text-lg text-indigo-600 font-bold mt-6">
                 Lampang Kanlayanee School
               </h3>
               <h5 className=" ">

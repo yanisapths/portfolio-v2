@@ -4,143 +4,173 @@ import Image from "next/image";
 import Router, { useRouter } from "next/router";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import { ExternalLinkIcon } from "@heroicons/react/solid";
+import FeaturedCard from "../components/ui/FeaturedCard";
 
 function FeaturedProjects() {
   const router = useRouter();
   const navigate = () => {
     router.push("/projects/oliveplatform");
   };
+  const p1 = {
+    title: "Physical Therapy Service Management Platform",
+    date: "November 2022 - April 2023",
+    award: "Scholarship Awarded from D-Plus Intertrade Co., Ltd",
+    tech: [
+      { name: "Next.js" },
+      { name: "MongoDB" },
+      { name: "Express.JS" },
+      { name: "Vercel" },
+    ],
+    about:
+      "A platform that helps physical therapy clinics and their customers by making the appointment process easier and more efficient. Customers can use the app to find clinics, book appointments, and see pricing.",
+    link: "",
+    caption: "Desktop / Mobile",
+    pic: "/asset/preview1.png",
+  };
+
+  const p2 = {
+    title: "Discord Quiz Bot",
+    date: "December 2022",
+    tech: [
+      { name: "Discord API" },
+      { name: " Python" },
+      { name: "Django" },
+      { name: "Heroku" },
+    ],
+    about:
+      "Developed discord bot for helping with learning using Python on Django API framework, deploy on Heroku.",
+    link: "",
+    pic: "/asset/discord-bot.png",
+  };
+  const p3 = {
+    title: "Learning Quiz Web Design",
+    date: "SE Course - 2022",
+    tech: [{ name: "Figma" }],
+    about:
+      "Designed, wireframing, and prototyping with Figma for daily-poisson web app.",
+    link: "",
+    pic: "/asset/SE-design.png",
+  };
   return (
-    <section className="mx-8 lg:mx-5  md:mx-10 bg-[#070738]">
-      <div className=" max-w-6xl mx-auto h-48 bg-[#070738]">
-        <h1 className="flex text-emerald-400 text-5xl md:text-9xl font-bold  lg:py-20 xl:py-20 p-0 text-center md:text-left">
-          Projects
-          <Link href="/projects">
-            <ArrowRightIcon className="flex lg:mt-14 lg:ml-10 md:mt-12 md:ml-10 lg:h-10 lg:w-10 md:w-14 md:h-14 h-5 w-5 ml-3 mt-4 -m-0 cursor-pointer transform hover:translate-x-2 transition duration-300" />
-          </Link>
-        </h1>
-      </div>
+    <section className="mx-8 lg:mx-5 lg:pt-20 md:mx-10 bg-[#070738]">
+      <div className="max-w-6xl mx-auto bg-[#070738]"></div>
 
       {/* Grid starts here */}
-      <div className="bg-[#070738] justify-center align-center -mt-40 xl:mt-0 lg:mt-0 md:-mt-16">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
-          {/* Single card */}
-          <div className="w-full h-full flex flex-row col-span-3 shadow-2xl">
-            <div className="lg:basis-1/3 basis-1/2 relative overflow-hidden">
-              <Image
-                src="/asset/preview1.png"
-                alt="portfolio"
-                objectFit="cover"
-                layout="fill"
-                onClick={() => navigate()}
-                className="cursor-pointer opacity-70 transform hover:scale-125 transition duration-2000 ease-out"
-              />
-              <Link href="/projects/oliveplatform">
-                <h3 className="absolute top-10 left-5 text-indigo-400 font-bold lg:text-xl md:text-xl bg-white shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 md:px-4 md:py-3 hover:bg-black/50 hover:border-2 hover:text-white cursor-pointer">
-                  Read More
-                </h3>
-              </Link>
-            </div>
-            <div className="lg:basis-2/3 basis-1/2 ">
-              <p className="m-5 lg:ml-14 text-white text-lg lg:text-4xl  md:text-4xl md:ml-14">
-                Physiotherapy Serice Management
-              </p>
-              <p
-                className="m-5 lg:text-lg md:text-xl md:mx-14  shadow-white drop-shadow-2xl text-xs font-bold"
-                style={{
-                  background:
-                    "linear-gradient(90deg, #008BFF 15.7%, #16C8F7 35.94%, rgba(147, 115, 249, 0.965091) 104.01%, rgba(131, 71, 238, 0.92) 123.02%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                  textFillColor: "transparent",
-                }}
-              >
-                Scholarship Awarded from D-Plus Intertrade Co., Ltd
-              </p>
-              <p className="px-5 max-h-16 overflow-hidden md:max-h-full md:px-14 md:py-4 lg:text-lg md:text-xl text-white text-xs">
-                A platform that helps physical therapy clinics and their
-                customers by making the appointment process easier and more
-                efficient. Customers can use the app to find clinics, book
-                appointments, and see pricing.
-              </p>
-              <h1 className="pr-6 text-indigo-500 text-sm w-full justify-center p-2 text-right">
-                Next.js ★ MongoDB ★ Tailwind CSS ★ Express ★{" "}
-                <span
-                  style={{
-                    background:
-                      "linear-gradient(90deg, #008BFF 15.7%, #16C8F7 35.94%, rgba(147, 115, 249, 0.965091) 104.01%, rgba(131, 71, 238, 0.92) 123.02%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text",
-                    textFillColor: "transparent",
-                  }}
-                  className="font-semibold shadow-white drop-shadow-2xl "
-                >
-                  Full-Stack
-                </span>
-              </h1>
+      <div className="space-y-8">
+        <div className="rounded-lg max-w-2xl mx-auto">
+          <div className="rounded-lg relative h-96 w-full font-homemade text-transparent hover:text-white shadow-highlight shadow-white">
+            <Image
+              alt="Image"
+              src="/asset/preview1.png"
+              layout="fill"
+              objectFit="cover"
+              onClick={() => navigate()}
+              className="rounded-lg hover:opacity-40 cursor-pointer"
+            />
+            <div className="absolute -mt-6 top-1/2 w-full text-center">
+              <p className="font-black text-6xl">Read More</p>
             </div>
           </div>
-          {/* Single card */}
-          <div className="lg:w-full flex flex-row  col-span-3 shadow-2xl">
-            <div className="lg:basis-1/3 basis-1/2 relative overflow-hidden">
-              <Image
-                src="/asset/SE-design.png"
-                alt="portfolio"
-                objectFit="cover"
-                layout="fill"
-                className="scale-125 transform hover:scale-150 transition duration-2000 ease-out"
-              />
-              <a href="https://www.figma.com/file/eJhWs89I5BQ3AkD410qrKl/poisssonUI">
-                <h3 className="absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl  md:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-4 lg:py-3 px-2 md:px-4 md:py-3 hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
-                  Figma
-                  <ExternalLinkIcon className="inline-flex h- w-7 pl-2 mb-2 cursor-pointer transform " />
-                </h3>
-              </a>
-            </div>
-            <div className="lg:basis-2/3 basis-1/2 ">
-              <p className="m-5 lg:mt-20 lg:ml-14 text-white text-lg lg:text-4xl md:text-4xl md:mt-20 md:ml-14 ">
-                UI Design
+          <div className="mt-6">
+            <h2 className="text-xl font-bold text-white">
+              {p1.title}{" "}
+              <p className="font-light text-xs md:text-sm text-gray-300">
+                {p1.caption}
               </p>
-              <p className="m-5 md:px-8 lg:text-lg md:text-xl text-white text-xs ">
-                Designed, wireframing, and prototyping with Figma for
-                daily-poisson web app.
-              </p>
-              <h1 className="pr-6 text-indigo-500 text-sm w-full justify-center pt-16 text-right p-4">
-                Figma
-              </h1>
-            </div>
-          </div>
-          {/* Single card */}
-          <div className="w-full lg:mt-12 lg:flex  flex-row  col-span-3 shadow-2xl">
-            <div className="basis-1/2 relative overflow-hidden">
-              <img
-                src="/asset/discord-bot.png"
-                alt="portfolio"
-                className="transform hover:scale-125 transition duration-2000 ease-out"
-              />
-              <a href="https://python.plainenglish.io/build-discord-quizbot-with-python-and-deploy-1-44dec1250a37">
-                <h3 className="cursor-pointer absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl  md:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-6 lg:py-3 px-2 md:px-4 md:py-3  hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
-                  Read on Medium
-                  <ExternalLinkIcon className="inline-flex h- w-7 pl-2 mb-2 cursor-pointer transform " />
-                </h3>
-              </a>
-            </div>
-            <div className=" basis-1/2">
-              <p className="m-5  lg:ml-14 text-white text-lg lg:text-4xl  md:text-4xl md:mt-20 md:ml-14">
-                Discord Quiz Bot
-              </p>
-              <p className="m-5 lg:m-14 lg:text-lg md:text-xl md:m-14 text-white text-xs">
-                Developed discord bot for helping with learning using Python on
-                Django API framework, deploy on Heroku.
-              </p>
-              <h1 className="pr-6 text-indigo-500 text-sm w-full justify-center p-4 text-right lg:pb-8">
-                Django DRF ★ Python ★ Heroku
-              </h1>
+            </h2>
+            <p
+              className="py-1 shadow-white drop-shadow-2xl text-xl font-bold"
+              style={{
+                background:
+                  "linear-gradient(90deg, #008BFF 15.7%, #16C8F7 35.94%, rgba(147, 115, 249, 0.965091) 104.01%, rgba(131, 71, 238, 0.92) 123.02%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+                textFillColor: "transparent",
+              }}
+            >
+              {p1.award}
+            </p>
+            <p className="text-sm text-gray-300">{p1.date}</p>
+            <p className="mt-4 text-white">{p1.about}</p>
+
+            <div className="mt-4 flex flex-wrap">
+              {p1.tech.map((t) => {
+                return (
+                  <span key={t} className="chip">
+                    {t.name}
+                  </span>
+                );
+              })}
             </div>
           </div>
         </div>
+
+        {/* p2 */}
+        <div className="rounded-lg shadow-lg max-w-2xl mx-auto">
+          <div className="rounded-lg relative h-96 w-full">
+            <Image
+              alt="Image"
+              src="/asset/discord-bot.png"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
+            <a href="https://python.plainenglish.io/build-discord-quizbot-with-python-and-deploy-1-44dec1250a37">
+              <h3 className="cursor-pointer absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl  md:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-6 lg:py-3 px-2 md:px-4 md:py-3  hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
+                Read on Medium
+                <ExternalLinkIcon className="inline-flex h- w-7 pl-2 mb-2 cursor-pointer transform " />
+              </h3>
+            </a>
+          </div>
+          <div className="mt-6">
+            <h2 className="text-xl font-bold text-white">{p2.title}</h2>
+
+            <p className="text-sm text-gray-300">{p2.date}</p>
+            <p className="mt-4 text-white">{p2.about}</p>
+
+            <div className="mt-4 flex flex-wrap">
+              {p2.tech.map((t) => {
+                return (
+                  <span key={t} className="chip">
+                    {t.name}
+                  </span>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+        {/* p2 */}
+
+        {/* p3 */}
+        <div className="rounded-lg shadow-lg max-w-2xl mx-auto">
+          <div className="relative h-96 w-full rounded-lg">
+            <Image
+              alt="Image"
+              src="/asset/SE-design.png"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
+          </div>
+          <div className="mt-6">
+            <h2 className="text-xl font-bold text-white">{p3.title}</h2>
+
+            <p className="text-sm text-gray-300">{p3.date}</p>
+            <p className="mt-4 text-white">{p3.about}</p>
+
+            <div className="mt-4 flex flex-wrap">
+              {p3.tech.map((t) => {
+                return (
+                  <span key={t} className="chip">
+                    {t.name}
+                  </span>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+        {/* p3 */}
       </div>
     </section>
   );

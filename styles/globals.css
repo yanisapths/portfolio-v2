@@ -6,7 +6,7 @@ body {
   padding: 0;
   margin: 0;
   margin-bottom: 100px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #070738;
 }
 
@@ -19,10 +19,12 @@ a {
   box-sizing: border-box;
 }
 
-
 @layer components {
   .tag {
     @apply px-3 py-2 md:px-4 text-xs md:text-lg rounded-full cursor-pointer border-indigo-500 border  text-indigo-500 hover:text-white hover:bg-indigo-500
-    shadow-md  active:scale-95 active:text-white active:bg-indigo-500 transform hover:-translate-y-1 hover:translate-x-1 transition duration-300  ;
+    shadow-md  active:scale-95 active:text-white active:bg-indigo-500 transform hover:-translate-y-1 hover:translate-x-1 transition duration-300;
+  }
+  .chip {
+    @apply border-[0.5px] shadow-white shadow-4xl text-white py-1 px-2 rounded-full text-xs mr-2 mb-2;
   }
 }

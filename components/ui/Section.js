@@ -14,7 +14,7 @@ function Section() {
   };
   return (
     <section>
-      <div className="px-8 pt-4 pb-12 mx-auto max-w-screen-2xl sm:px-6 lg:px-60 xl:px-96 xl:mt-10 xl:mb-40 md:px-48">
+      <div className="px-4 pt-4 pb-12 mx-auto max-w-screen-2xl sm:px-6 lg:px-60 xl:px-96 xl:mt-10 xl:mb-40 md:px-48">
         <div className="grid grid-cols-1 lg:grid-cols-2 h:-1/6 lg:h-1/6 xl:h-[10rem] ">
           <div className="relative z-10 lg:py-12 md:px-2 lg:px-2 xl:px-2 xl:py-6 px-20">
             <div className="relative h-40 sm:h-80 lg:h-full shadow-2xl shadow-indigo-700">
