@@ -12,13 +12,13 @@ export const All = [
     ],
     about:
       "A platform that helps physical therapy clinics and their customers by making the appointment process easier and more efficient. Customers can use the app to find clinics, book appointments, and see pricing.",
-    link: "",
+    link: "/projects/oliveplatform",
     caption: "Desktop / Mobile",
     pic: "/asset/preview1.png",
     imgUrl: "/asset/preview1.png",
     type: "Development",
     tool: "Next.js ★  MongoDB ★ Express ★ Tailwind CSS",
-    moreinfo: "Read more..."
+    moreinfo: "Read more...",
   },
   {
     id: 1,
@@ -49,7 +49,7 @@ export const All = [
       "Developed discord bot for helping with learning using Python on Django API framework, deploy on Heroku.",
     link: "",
     tool: "Django DRF ★ Python ★ Heroku",
-    moreinfo: "Read on Medium"
+    moreinfo: "Read on Medium",
   },
 ];
 
@@ -67,13 +67,13 @@ export const design = [
     ],
     about:
       "A platform that helps physical therapy clinics and their customers by making the appointment process easier and more efficient. Customers can use the app to find clinics, book appointments, and see pricing.",
-    link: "",
+    link: "/projects/oliveplatform",
     caption: "Desktop / Mobile",
     pic: "/asset/preview1.png",
     imgUrl: "/asset/preview1.png",
     type: "Development",
     tool: "Next.js ★  MongoDB ★ Express ★ Tailwind CSS",
-    moreinfo: "Read more..."
+    moreinfo: "Read more...",
   },
   {
     id: 1,
@@ -102,13 +102,13 @@ export const dev = [
     ],
     about:
       "A platform that helps physical therapy clinics and their customers by making the appointment process easier and more efficient. Customers can use the app to find clinics, book appointments, and see pricing.",
-    link: "",
+    link: "/projects/oliveplatform",
     caption: "Desktop / Mobile",
     pic: "/asset/preview1.png",
     imgUrl: "/asset/preview1.png",
     type: "Development",
     tool: "Next.js ★  MongoDB ★ Express ★ Tailwind CSS",
-    moreinfo: "Read more..."
+    moreinfo: "Read more...",
   },
   {
     id: 2,
@@ -127,7 +127,7 @@ export const dev = [
       "Developed discord bot for helping with learning using Python on Django API framework, deploy on Heroku.",
     link: "",
     tool: "Django DRF ★ Python ★ Heroku",
-    moreinfo: "Read on Medium"
+    moreinfo: "Read on Medium",
   },
 ];
 
@@ -149,6 +149,6 @@ export const bot = [
       "Developed discord bot for helping with learning using Python on Django API framework, deploy on Heroku.",
     link: "",
     tool: "Django DRF ★ Python ★ Heroku",
-    moreinfo: "Read on Medium"
+    moreinfo: "Read on Medium",
   },
 ];

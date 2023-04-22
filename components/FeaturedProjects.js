@@ -102,8 +102,22 @@ function FeaturedProjects() {
                 );
               })}
             </div>
+            <div className="py-3">
+            <a href="https://o-live.vercel.app" className="items-center flex gap-1 text-sm cursor-pointer text-sky-400 underline">
+            <p className="">
+                Live - Customer App (Olive)
+              </p>
+                <ExternalLinkIcon className="h-4 w-4"/>
+            </a>
+            <a href="https://daycare.vercel.app"  className="items-center gap-1 text-sm flex cursor-pointer text-sky-400 underline">
+            <p className="">
+              Live - PT Clinic Management App
+              </p>
+                <ExternalLinkIcon className="h-4 w-4"/>
+            </a>
+            </div>
             <Link href="/projects/oliveplatform">
-              <p className="cursor-pointer relative text-sm text-sky-400 font-medium before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-sky-600 before:transition hover:before:scale-100">
+              <p className="cursor-pointer relative text-sm text-sky-400 font-medium before:absolute before:-bottom-1 before:h-0.5 before:w-24 before:origin-left before:scale-x-0 before:bg-sky-600 before:transition hover:before:scale-100">
                 Read More...
               </p>
             </Link>

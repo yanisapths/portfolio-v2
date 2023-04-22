@@ -8,6 +8,7 @@ import Section from "../components/ui/Section";
 import Link from "next/link";
 import Intro from "../components/Intro";
 import ScrollingMouse from "../components/ui/ScrollingMouse";
+import Youtube from "../components/ui/Youtube";
 
 export default function Home() {
   const handleScroll = (e) => {
@@ -63,12 +64,20 @@ export default function Home() {
                 </Link>
               </button>
             </div>
-            <Link className="btn" href="#section-0" onClick={handleScroll}>
-              <p className="pt-6 hover:scale-95 hover:text-white text-gray-300 cursor-pointer">
-                Back to Top
-              </p>
-            </Link>
           </div>
+        </section>
+        <section className="px-12 mt-20 bg-[#070738]" id="section-3">
+          <div className="mx-auto overflow-hidden max-w-xl">
+            <div className="flex flex-col items-center gap-4">
+              <h2 className="text-xl py-6 text-gray-300">Video</h2>
+              <Youtube link="https://www.youtube.com/embed/lQzAY91wq6Y" />
+            </div>
+          </div>
+              <Link className="btn" href="#section-0" onClick={handleScroll}>
+                <p className="pt-6 font-bold text-center hover:scale-95 hover:text-white text-gray-300 cursor-pointer">
+                  Back to Top
+                </p>
+              </Link>
         </section>
       </main>
       <Footer />

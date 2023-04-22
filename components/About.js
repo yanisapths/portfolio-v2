@@ -4,6 +4,7 @@ import Image from "next/image";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneIcon from "@mui/icons-material/Phone";
 import Intro from "../components/Intro";
+import BackNavigate from "./ui/BackNavigate";
 
 function About() {
   const Mailto = ({ email, subject = "", body = "", children }) => {
@@ -14,9 +15,12 @@ function About() {
     return <a href={`mailto:${email}${params}`}>{children}</a>;
   };
   return (
-    <section className="mx-0 bg-[#070738]">
-      <div className="mt-10 bg-[#070738]">
-        <h1 className="font-homemade text-4xl xl:pl-48 lg:text-7xl font-bold py-10 md:py-20 text-center md:text-left">
+    <section className="bg-[#070738]">
+      <div className="mt-10 px-48">
+        <BackNavigate />
+      </div>
+      <div className="bg-[#070738]">
+        <h1 className="font-homemade text-4xl xl:pl-48 lg:text-7xl font-bold py-10 lg:py-12 text-center md:text-left">
           About me
         </h1>
       </div>
@@ -72,7 +76,7 @@ function About() {
           </div>
         </div>
         {/* Right Grid */}
-        <div className="md:px-28 pb-24 lg:-ml-32 xl:-ml-72">
+        <div className="mx-16 md:px-28 pb-24 lg:-ml-32 xl:-ml-72">
           <p className="md:px-12 lg:text-lg mb-10 xl:w-4/5">
             Hej👋 My name is Yanisa Poongthaisong or you can call me Dookdik. My
             key strengths are mostly front-end development. I am most proficient

@@ -3,6 +3,7 @@ import Layout from "../components/ui/Layout.js";
 import Head from "next/head";
 import ProjectList from "../components/ProjectList";
 import { All, design, dev, bot } from "../data/proj";
+import BackNavigate from "../components/ui/BackNavigate.js"
 
 export default function Project() {
   const [selected, setSelected] = useState("projects");
@@ -114,10 +115,12 @@ export default function Project() {
       <Head>
         <title>Projects | Yanisa Poongthaisong</title>
       </Head>
-
       <section className="mx-0 bg-[#070738]">
-        <div className="mt-10 bg-[#070738]">
-          <h1 className="font-homemade text-3xl xl:pl-48 lg:text-7xl font-bold py-4 lg:py-20 text-center md:text-left">
+        <div className="mt-10 px-48">
+        <BackNavigate />
+        </div>
+        <div className="bg-[#070738]">
+          <h1 className="font-homemade text-3xl xl:pl-48 lg:text-7xl font-bold py-4 lg:py-12 text-center md:text-left">
             Projects
           </h1>
         </div>
