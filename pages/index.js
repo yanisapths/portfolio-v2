@@ -32,12 +32,14 @@ export default function Home() {
       <Navbar />
       <main className="flex-auto">
         <section
-          className="grid place-content-center px-12 mt-10 lg:mt-0 min-h-screen"
+          className="grid place-content-center px-4 mt-10 lg:mt-0 min-h-screen"
           id="section-0"
         >
           <Hero />
           <h2 className="text-xl text-center py-6 text-gray-300">About Me</h2>
+          <div className="mx-8">
           <Intro />
+          </div>
         </section>
         <div
           className="grid place-content-center min-h-screen text-gray-50"

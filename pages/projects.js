@@ -115,8 +115,8 @@ export default function Project() {
       <Head>
         <title>Projects | Yanisa Poongthaisong</title>
       </Head>
-      <section className="mx-0 bg-[#070738]">
-        <div className="mt-10 px-48">
+      <section className="bg-[#070738]">
+        <div className="mt-10 px-36 lg:px-48">
         <BackNavigate />
         </div>
         <div className="bg-[#070738]">
