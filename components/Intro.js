@@ -3,8 +3,8 @@ import Image from "next/image";
 
 function Intro() {
   return (
-    <div className="items-center px-12 max-w-2xl">
-      <div className="items-center text-gray-100 text-sm ">
+    <div className="items-center max-w-2xl">
+      <div className="items-center text-gray-100 text-sm">
         <p className="text-2xl font-bold">Yanisa Poongthaisong</p>
         <p className="text-md text-gray-400">Thailand</p>
       </div>
@@ -65,7 +65,7 @@ function Intro() {
       </div>
       {/* skills */}
       <h2 className="mt-6 text-xl text-white font-extrabold">SKILLS</h2>
-      <div className="py-4 md:p-6 ">
+      <div className="py-4 md:p-6">
         <div className="flex py-4 gap-4 md:gap-10 items-center">
           <p className="text-sm md:text-xl basis-1/3 text-gray-400 font-bold">
             Languages

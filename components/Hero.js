@@ -15,7 +15,7 @@ function Hero() {
   }, []);
   return (
     <section className="flex flex-col items-center">
-      <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
+      <div className="mx-auto max-w-screen-xl px-4 pb-32 lg:flex lg:h-screen lg:items-center">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="py-6 text-indigo-400 font-bold xl:text-md sm:text-lg">
             Hej 👋 My name is

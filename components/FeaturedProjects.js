@@ -4,7 +4,6 @@ import Image from "next/image";
 import Router, { useRouter } from "next/router";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import { ExternalLinkIcon } from "@heroicons/react/solid";
-import FeaturedCard from "../components/ui/FeaturedCard";
 
 function FeaturedProjects() {
   const router = useRouter();
@@ -94,7 +93,7 @@ function FeaturedProjects() {
             <p className="text-sm text-gray-300">{p1.date}</p>
             <p className="mt-4 text-white">{p1.about}</p>
 
-            <div className="mt-4 flex flex-wrap">
+            <div className="mt-4 pb-1 flex flex-wrap">
               {p1.tech.map((t) => {
                 return (
                   <span key={t} className="chip">
@@ -103,11 +102,17 @@ function FeaturedProjects() {
                 );
               })}
             </div>
+            <a
+              href="/projects/oliveplatform"
+              className="cursor-pointer relative text-sm text-sky-400 font-medium before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-sky-600 before:transition hover:before:scale-100"
+            >
+              Read More...
+            </a>
           </div>
         </div>
 
         {/* p2 */}
-        <div className="rounded-lg shadow-lg max-w-2xl mx-auto">
+        <div className="rounded-lg max-w-2xl mx-auto">
           <div className="rounded-lg relative h-96 w-full">
             <Image
               alt="Image"
@@ -129,7 +134,7 @@ function FeaturedProjects() {
             <p className="text-sm text-gray-300">{p2.date}</p>
             <p className="mt-4 text-white">{p2.about}</p>
 
-            <div className="mt-4 flex flex-wrap">
+            <div className="mt-4 pb-1 flex flex-wrap">
               {p2.tech.map((t) => {
                 return (
                   <span key={t} className="chip">
@@ -138,12 +143,18 @@ function FeaturedProjects() {
                 );
               })}
             </div>
+            <a
+              href="https://python.plainenglish.io/build-discord-quizbot-with-python-and-deploy-1-44dec1250a37"
+              className="cursor-pointer relative text-sm text-sky-400 font-medium before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-sky-600 before:transition hover:before:scale-100"
+            >
+              Read on Medium
+            </a>
           </div>
         </div>
         {/* p2 */}
 
         {/* p3 */}
-        <div className="rounded-lg shadow-lg max-w-2xl mx-auto">
+        <div className="rounded-lg max-w-2xl mx-auto">
           <div className="relative h-96 w-full rounded-lg">
             <Image
               alt="Image"
@@ -159,7 +170,7 @@ function FeaturedProjects() {
             <p className="text-sm text-gray-300">{p3.date}</p>
             <p className="mt-4 text-white">{p3.about}</p>
 
-            <div className="mt-4 flex flex-wrap">
+            <div className="mt-4 pb-1 flex flex-wrap">
               {p3.tech.map((t) => {
                 return (
                   <span key={t} className="chip">
@@ -168,6 +179,12 @@ function FeaturedProjects() {
                 );
               })}
             </div>
+            <a
+              href="#"
+              className="cursor-pointer relative text-sm text-sky-400 font-medium before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-sky-600 before:transition hover:before:scale-100"
+            >
+              Read More...
+            </a>
           </div>
         </div>
         {/* p3 */}

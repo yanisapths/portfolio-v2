@@ -1,5 +1,4 @@
 import React from "react";
-import { NextPage } from "next";
 import Head from "next/head";
 import Navbar from "../components/ui/Navbar";
 import Footer from "../components/ui/Footer";
@@ -7,7 +6,6 @@ import FeaturedProjects from "../components/FeaturedProjects";
 import Hero from "../components/Hero";
 import Section from "../components/ui/Section";
 import Link from "next/link";
-import data from "../data/data";
 import Intro from "../components/Intro";
 import ScrollingMouse from "../components/ui/ScrollingMouse";
 
@@ -33,7 +31,7 @@ export default function Home() {
       <Navbar />
       <main className="flex-auto">
         <section
-          className="grid place-content-center mt-8 min-h-screen"
+          className="grid place-content-center px-12 mt-10 lg:mt-0 min-h-screen"
           id="section-0"
         >
           <Hero />

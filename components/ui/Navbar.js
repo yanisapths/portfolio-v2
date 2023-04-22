@@ -57,11 +57,6 @@ function  Navbar() {
               Projects
               </a>
             </Link>
-            <Link href='/contact'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold  text-xl items-center justify-center  hover:text-lime-400  hover:font-extrabold transition transform duration-300 ease-out'>
-                Contact
-              </a>
-            </Link>
           </div>
         </div>
 </nav>
