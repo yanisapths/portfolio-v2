@@ -4,7 +4,7 @@ import Head from "next/head";
 import ProjectList from "../components/ProjectList";
 import { All, design, dev, bot } from "../data/proj";
 
-function projects() {
+export default function Project() {
   const [selected, setSelected] = useState("projects");
   const [data, setData] = useState([]);
   const list = [
@@ -161,5 +161,3 @@ function projects() {
     </Layout>
   );
 }
-
-export default projects;

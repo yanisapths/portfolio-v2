@@ -102,12 +102,11 @@ function FeaturedProjects() {
                 );
               })}
             </div>
-            <a
-              href="/projects/oliveplatform"
-              className="cursor-pointer relative text-sm text-sky-400 font-medium before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-sky-600 before:transition hover:before:scale-100"
-            >
-              Read More...
-            </a>
+            <Link href="/projects/oliveplatform">
+              <p className="cursor-pointer relative text-sm text-sky-400 font-medium before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-sky-600 before:transition hover:before:scale-100">
+                Read More...
+              </p>
+            </Link>
           </div>
         </div>
 
