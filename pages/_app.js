@@ -2,7 +2,7 @@ import "../styles/tailwind.css";
 import "../styles/globals.css";
 import React, { useState } from "react";
 import ResumeDialog from "../components/ResumeDialog";
-import FloatingNavigator from "../components/FloatingNavigator";
+import FloatingSocial from "../components/FloatingSocial";
 
 function MyApp({ Component, pageProps }) {
   const [open, setOpen] = useState(false);
@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
         url(&apos;https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap&apos;);
       </style>
       {open && <ResumeDialog open={open} handleClose={handleClose} />}
-      <FloatingNavigator handleOpen={handleClickOpen} />
+      <FloatingSocial handleOpen={handleClickOpen} />
     </>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import data from "../data/data";
 import EmailIcon from "@mui/icons-material/Email";
 
-function FloatingNavigator({ handleOpen }) {
+function FloatingSocial({ handleOpen }) {
   const Mailto = ({ email, subject = "", body = "", children }) => {
     let params = subject || body ? "?" : "";
     if (subject) params += `subject=${encodeURIComponent(subject)}`;
@@ -84,4 +84,4 @@ function FloatingNavigator({ handleOpen }) {
   );
 }
 
-export default FloatingNavigator;
+export default FloatingSocial;

@@ -25,7 +25,7 @@ function Hero() {
           </h1>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <h3 className="pt-10 text-indigo-400 font-bold xl:text-7xl text-3xl sm:text-4xl lg:text-6xl">
+            <h3 className="pt-10 text-indigo-400 font-bold xl:text-7xl text-xl sm:text-4xl lg:text-6xl">
               I design <span ref={textRef}></span>
             </h3>
           </div>

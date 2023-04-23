@@ -1,7 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 function Intro() {
+  const Mailto = ({ email, subject = "", body = "", children }) => {
+    let params = subject || body ? "?" : "";
+    if (subject) params += `subject=${encodeURIComponent(subject)}`;
+    if (body) params += `${subject ? "&" : ""}body=${encodeURIComponent(body)}`;
+
+    return <a href={`mailto:${email}${params}`}>{children}</a>;
+  };
   return (
     <div className="items-center max-w-2xl">
       <div className="items-center text-gray-100 text-sm">
@@ -13,13 +21,13 @@ function Intro() {
         <h2 className="mt-6 text-xl text-white font-extrabold">EDUCATION</h2>
         {/* education */}
         <div className="py-4">
-        <p className="text-gray-400 mt-3">2019 - 2023</p>
-        <p>2nd Class Hornour GPA 3.46</p>
-        <p>B.Eng in Information Systems and Network Engineering</p>
+          <p className="text-gray-400 mt-3">2019 - 2023</p>
+          <p>2nd Class Hornour GPA 3.46</p>
+          <p>B.Eng in Information Systems and Network Engineering</p>
 
-        <h3 className="text-indigo-300 text-md font-bold">
-          Chiang Mai University
-        </h3>
+          <h3 className="text-indigo-300 text-md font-bold">
+            Chiang Mai University
+          </h3>
         </div>
         {/* Work */}
         <h2 className="mt-6 text-xl text-white font-extrabold">EXPERIENCE</h2>
@@ -62,6 +70,17 @@ function Intro() {
             </h3>
           </div>
         </div>
+        <div>
+          <Mailto
+            email="yanisa21@live.com"
+            subject="References Request"
+            body="I'd like a reference from company ..."
+          >
+            <p className="text-sky-400 text-[10px] hover:underline">
+            Request References
+            </p>
+          </Mailto>
+        </div>
       </div>
       {/* skills */}
       <h2 className="mt-6 text-xl text-white font-extrabold">SKILLS</h2>
@@ -76,21 +95,25 @@ function Intro() {
         </div>
 
         <div className="flex py-4 gap-4 md:gap-10 items-center">
-          <p className="text-sm md:text-xl basis-1/3 text-gray-400 font-bold">Design</p>
-          <h3 className="basis-2/3 text-sm text-white">
-            Figma
-          </h3>
+          <p className="text-sm md:text-xl basis-1/3 text-gray-400 font-bold">
+            Design
+          </p>
+          <h3 className="basis-2/3 text-sm text-white">Figma</h3>
         </div>
         <div className="flex py-4 gap-4 md:gap-10 items-center">
-          <p className="text-sm md:text-xl basis-1/3 text-gray-400 font-bold">Protocols</p>
+          <p className="text-sm md:text-xl basis-1/3 text-gray-400 font-bold">
+            Protocols
+          </p>
           <h3 className="basis-2/3 text-sm text-white">XML REST JSON</h3>
         </div>
 
         <div className="flex py-4 gap-4 md:gap-10 items-center">
-          <p className="text-sm md:text-xl basis-1/3 text-gray-400 font-bold">Frameworks</p>
+          <p className="text-sm md:text-xl basis-1/3 text-gray-400 font-bold">
+            Frameworks
+          </p>
           <h3 className="basis-2/3 text-sm text-white">
-            ExpressJs, ReactJs, NextJs, NodeJs, Django, Git, Vercel,
-            Flutter, Firebase, Docker, GCP, AWS, Linux, Ubuntu
+            ExpressJs, ReactJs, NextJs, NodeJs, Django, Git, Vercel, Flutter,
+            Firebase, Docker, GCP, AWS, Linux, Ubuntu
           </h3>
         </div>
       </div>
