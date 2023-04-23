@@ -20,7 +20,7 @@ function Hero() {
           <h2 className="py-6 text-indigo-400 font-bold xl:text-md sm:text-lg">
             Hej 👋 My name is
           </h2>
-          <h1 className="font-homemade text-white font-extrabold xl:text-7xl text-3xl  sm:text-6xl lg:text-6xl">
+          <h1 className="font-homemade text-white font-extrabold xl:text-7xl text-3xl sm:text-6xl lg:text-6xl">
             Yanisa Poongthaisong
           </h1>
 

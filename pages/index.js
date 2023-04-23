@@ -41,7 +41,7 @@ export default function Home() {
       <FloatingNav handleScroll={handleScroll} />
       <main className="flex-auto">
         <section
-          className="grid place-content-center px-4 pt-24 sm:pt-0 sm:min-h-screen"
+          className="grid place-content-center px-4 sm:pt-0 min-h-screen"
           id="section-0"
         >
         <Hero />
@@ -50,7 +50,7 @@ export default function Home() {
           className="grid place-content-center px-4 sm:min-h-screen"
           id="section-1"
         >
-          <h2 className="text-xl text-center text-gray-300">About Me</h2>
+          <h2 className="text-xl text-center text-gray-300 pb-4">About Me</h2>
           <div className="flex flex-col items-center gap-8">
             <Section />
           </div>
