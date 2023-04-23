@@ -5,9 +5,8 @@ function Hero() {
   const textRef = useRef();
 
   useEffect(() => {
-    //console.log(textRef);
     init(textRef.current, {
-      showCursor: true,
+      showCursor: false,
       backDelay: 1500,
       backSpeed: 60,
       strings: [" and build."],

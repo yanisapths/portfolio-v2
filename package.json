@@ -15,11 +15,12 @@
     "@mui/icons-material": "^5.11.11",
     "@mui/lab": "^5.0.0-alpha.83",
     "@mui/material": "^5.11.14",
+    "framer-motion": "^10.12.4",
     "ityped": "^1.0.3",
-    "next": "12.1.0",
+    "next": "^13.3.1",
     "next-mdx-remote": "^4.0.3",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.36",

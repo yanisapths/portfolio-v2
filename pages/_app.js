@@ -3,6 +3,17 @@ import "../styles/globals.css";
 import React, { useState } from "react";
 import ResumeDialog from "../components/ResumeDialog";
 import FloatingSocial from "../components/FloatingSocial";
+import { Montserrat } from 'next/font/google'
+import { Homemade_Apple } from 'next/font/google'
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+})
+const homemadeApple = Homemade_Apple({
+  subsets: ['latin'],
+  variable: '--font-HomemadeApple',
+  weight: ['400'],
+})
 
 function MyApp({ Component, pageProps }) {
   const [open, setOpen] = useState(false);
@@ -15,12 +26,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />
-      <style>
-        @import
-        url(&apos;https://fonts.googleapis.com/css2?family=Montserrat&display=swap&apos;);
-        @import
-        url(&apos;https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap&apos;);
-      </style>
       {open && <ResumeDialog open={open} handleClose={handleClose} />}
       <FloatingSocial handleOpen={handleClickOpen} />
     </>

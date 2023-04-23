@@ -10,6 +10,7 @@ import Intro from "../components/Intro";
 import ScrollingMouse from "../components/ui/ScrollingMouse";
 import Youtube from "../components/ui/Youtube";
 import FloatingNav from "../components/FloatingNav";
+import {motion} from "framer-motion";
 
 export default function Home() {
   const Mailto = ({ email, subject = "", body = "", children }) => {
@@ -51,9 +52,9 @@ export default function Home() {
           id="section-1"
         >
           <h2 className="text-xl text-center text-gray-300 pb-4">About Me</h2>
-          <div className="flex flex-col items-center gap-8">
+          <motion.div className="flex flex-col items-center gap-8">
             <Section />
-          </div>
+          </motion.div>
         </section>
         <section className="pt-6 px-12" id="section-2">
           <div className="mx-auto overflow-hidden max-w-xl">
