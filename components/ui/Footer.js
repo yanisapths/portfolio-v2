@@ -9,7 +9,7 @@ function Footer() {
        
         <div className="text-indigo-200  flex flex-col space-y-4 md:space-y-0 items-center mt-8">
           <div>
-            <p>Developed by Yanisa Poongthaisong</p>
+            <p className='text-xs md:text-md'>Developed by Yanisa Poongthaisong</p>
           </div>
           <div className="space-x-4 flex flex-row items-center lg:pt-4">
             {/* GitHub */}

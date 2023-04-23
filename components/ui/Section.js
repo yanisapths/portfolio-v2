@@ -28,7 +28,7 @@ function Section() {
           <div className="relative flex items-center bg-[#070738] lg:h-[24rem] xl:h-[24rem]  xl:w-[32rem] ml-8 -mt-12 shadow-2xl">
             <span className="hidden lg:inset-y-0 lg:absolute  lg:w-16 lg:bg-[#070738] lg:block lg:-left-16 "></span>
 
-            <div className="p-10 sm:p-16 lg:p-4 ">
+            <div className="mt-6 sm:mt-0 sm:p-16 lg:p-4">
               <div className="pt-12 text-lg pr-4 text-white">
                 <p className="font-homemade pb-4 lg:text-xl text-indigo-400">
                   Call Me Dookdik

@@ -116,7 +116,7 @@ export default function Project() {
         <title>Projects | Yanisa Poongthaisong</title>
       </Head>
       <section className="bg-[#070738]">
-        <div className="mt-10 px-36 lg:px-48">
+        <div className="mt-10 px-24 sm:px-36 lg:px-48">
         <BackNavigate />
         </div>
         <div className="bg-[#070738]">
@@ -125,9 +125,9 @@ export default function Project() {
           </h1>
         </div>
         {/* Grid starts here */}
-        <div className="bg-[#070738] justify-center xl:pl-48 xl:grid xl:grid-cols-2 lg:grid lg:grid-cols-2">
-          <div className="items-center max-w-2xl px-12 sm:px-28 lg:px-0">
-            <div className="flex mt-8 gap-2">
+        <div className="bg-[#070738] justify-center xl:pl-24 xl:grid xl:grid-cols-2 lg:grid lg:grid-cols-2">
+          <div className="items-center max-w-2xl">
+            <div className="flex justify-center gap-1 mt-8 sm:gap-2">
               {list.map((item) => (
                 <ProjectList
                   title={item.title}

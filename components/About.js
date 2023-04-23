@@ -77,19 +77,19 @@ function About() {
         </div>
         {/* Right Grid */}
         <div className="mx-16 md:px-28 pb-24 lg:-ml-32 xl:-ml-72">
-          <p className="md:px-12 lg:text-lg mb-10 xl:w-4/5">
+          <p className="text-xs px-8 md:text-md md:px-12 lg:text-lg mb-10 xl:w-4/5">
             Hej👋 My name is Yanisa Poongthaisong or you can call me Dookdik. My
             key strengths are mostly front-end development. I am most proficient
             with Next.js / React.js. A little bit of Flutter / Native Android /
             Vue.js / Django. My backend ecosystems includes AWS, GCP, Firebase,
             ExpressJS, MongoDB, Docker, and DynamoDB.
           </p>
-          <div className="md:px-12">
+          <div className="px-8 md:px-12">
             <Intro />
           </div>
           {/* certs */}
           {/* education */}
-          <div className="items-center md:px-12 max-w-2xl">
+          <div className="items-center px-8 md:px-12 max-w-2xl">
             <div className="text-gray-100 text-sm gap-4">
               <h2 className="mt-6 text-xl text-white font-extrabold">
                 CERTIFICATES
