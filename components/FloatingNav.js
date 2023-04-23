@@ -11,6 +11,11 @@ function FloatingNav({ handleScroll }) {
         </Link>
       </div>
       <div className="hover:scale-95 hover:text-gray-300 text-indigo-500 cursor-pointer">
+        <Link href="#section-2" onClick={handleScroll}>
+          Resume
+        </Link>
+      </div>
+      <div className="hover:scale-95 hover:text-gray-300 text-indigo-500 cursor-pointer">
         <Link href="#section-3" onClick={handleScroll}>
           Projects
         </Link>

@@ -55,19 +55,19 @@ export default function Home() {
             <Section />
           </div>
         </section>
-        <div
-          className="grid place-content-center min-h-screen text-gray-50"
-          id="section-2"
-        >
-          <section className="flex flex-col items-center mx-8">
-            <Intro />
-            {/* <Section /> */}
-            <h2 className="text-xl py-6 text-gray-300">Highlight Projects</h2>
-            <ScrollingMouse link="#section-3" handleScroll={handleScroll} />
-          </section>
-        </div>
+        <section className="px-12" id="section-2">
+          <div className="mx-auto overflow-hidden max-w-xl">
+            <div className="flex flex-col items-center gap-5">
+              <h2 className="text-xl py-6 text-gray-300">Resume</h2>
+              <Intro />
+              <h2 className="text-xl text-gray-300">Highlight Projects</h2>
+              <ScrollingMouse link="#section-3" handleScroll={handleScroll} />
+            </div>
+          </div>
+        </section>
+
         <section
-          className="grid place-content-center mt-8 min-h-screen"
+          className="grid place-content-center min-h-screen"
           id="section-3"
         >
           <div className="flex flex-col items-center gap-4">
@@ -82,7 +82,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="px-12 mt-20 bg-[#070738]" id="section-4">
+        <section className="px-12 mt-20" id="section-4">
           <div className="mx-auto overflow-hidden max-w-xl">
             <div className="flex flex-col items-center gap-4">
               <h2 className="text-xl py-6 text-gray-300">Video</h2>
@@ -90,7 +90,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="px-12 mt-20 bg-[#070738]" id="section-5">
+        <section className="px-12 mt-20" id="section-5">
           <div className="mx-auto overflow-hidden max-w-xl">
             <div className="flex flex-col items-center gap-5">
               <h2 className="text-xl py-6 text-gray-300">Get In Touch</h2>

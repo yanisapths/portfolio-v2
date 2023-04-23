@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import data from "../data/data";
 
 function Intro() {
   const Mailto = ({ email, subject = "", body = "", children }) => {
@@ -13,6 +14,14 @@ function Intro() {
   return (
     <div className="items-center max-w-2xl">
       <div className="items-center text-gray-100 text-sm">
+      <a
+         href={data.user.resume}
+      >
+        <p className="pb-4 text-sky-400 hover:underline text-sm font-extrabold transition-opacity">
+          Download resume (.pdf)
+        </p>
+      </a>
+
         <p className="text-2xl font-bold">Yanisa Poongthaisong</p>
         <p className="text-md text-gray-400">Thailand</p>
       </div>
