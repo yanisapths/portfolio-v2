@@ -44,7 +44,7 @@ export default function Home() {
           className="grid place-content-center px-4 sm:pt-0 min-h-screen"
           id="section-0"
         >
-        <Hero />
+          <Hero />
         </section>
         <section
           className="grid place-content-center px-4 sm:min-h-screen"
@@ -95,8 +95,9 @@ export default function Home() {
             <div className="flex flex-col items-center gap-5">
               <h2 className="text-xl py-6 text-gray-300">Get In Touch</h2>
               <p className="text-center text-white">
-                My inbox is always open. Whether you&apos;d like to Say Hi, Ask a
-                Question or build some projects together, you can contact me on{" "}
+                My inbox is always open. Whether you&apos;d like to Say Hi, Ask
+                a Question or build some projects together, you can contact me
+                on{" "}
                 <span className="hover:underline text-sky-400">
                   <a href="https://line.me/R/ti/p/ddyns">LINE</a>
                 </span>{" "}
