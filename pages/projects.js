@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import Layout from "../components/ui/Layout.js";
 import Head from "next/head";
 import ProjectList from "../components/ProjectList";
-import { All, design, dev, bot, mobile ,ml} from "../data/proj";
+import { All, design, dev, bot, mobile, ml } from "../data/proj";
 import BackNavigate from "../components/ui/BackNavigate.js";
 import Tooltip from "@mui/material/Tooltip";
+
 export default function Project() {
   const [selected, setSelected] = useState("projects");
   const [data, setData] = useState([]);
@@ -14,24 +15,25 @@ export default function Project() {
       title: "All",
     },
     {
+      id: "mobile",
+      title: "mobile",
+    },
+    {
       id: "design",
       title: "Design",
     },
+
     {
-      id: "dev",
-      title: "Development",
+      id: "machine-learning",
+      title: "machine-learning",
     },
     {
       id: "bot",
       title: "Bot",
     },
     {
-      id: "mobile",
-      title: "mobile",
-    },
-    {
-      id: "machine-learning",
-      title: "machine-learning",
+      id: "dev",
+      title: "Development",
     },
   ];
 
@@ -49,9 +51,9 @@ export default function Project() {
       case "mobile":
         setData(mobile);
         break;
-        case "machine-learning":
-          setData(ml);
-          break;
+      case "machine-learning":
+        setData(ml);
+        break;
 
       default:
         setData(All);
@@ -143,9 +145,9 @@ export default function Project() {
           </h1>
         </div>
         {/* Grid starts here */}
-        <div className="bg-[#070738] justify-center xl:pl-24 xl:grid xl:grid-cols-2 lg:grid lg:grid-cols-2">
-          <div className="items-center max-w-2xl">
-            <div className="flex justify-center gap-1 mt-8 sm:gap-2">
+        <div className="bg-[#070738]">
+          <div className="items-center">
+            <div className="mx-16 w-60 lg:w-auto md:w-96 grid grid-cols-2 lg:flex justify-center lg:gap-3 mt-8">
               {list.map((item) => (
                 <ProjectList
                   title={item.title}
