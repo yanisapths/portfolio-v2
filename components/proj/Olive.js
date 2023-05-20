@@ -13,10 +13,6 @@ function Olive() {
     <section className="px-12 bg-[#f8f8f8] text-[#121212]">
       <div className="max-w-8xl mx-auto overflow-hidden xl:max-w-4xl pb-20">
         <div className="md:flex">
-          {/* <div className="invisible md:visible w-2/6">
-            {" "}
-            <IndexContent handleScroll={handleScroll} />
-          </div> */}
           <div className="w-full md:w-4/6">
             <div className="pt-10">
               <BackNavigate light={true} />
