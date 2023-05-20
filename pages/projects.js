@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import Layout from "../components/ui/Layout.js";
 import Head from "next/head";
 import ProjectList from "../components/ProjectList";
-import { All, design, dev, bot } from "../data/proj";
-import BackNavigate from "../components/ui/BackNavigate.js"
-
+import { All, design, dev, bot, mobile ,ml} from "../data/proj";
+import BackNavigate from "../components/ui/BackNavigate.js";
+import Tooltip from "@mui/material/Tooltip";
 export default function Project() {
   const [selected, setSelected] = useState("projects");
   const [data, setData] = useState([]);
@@ -25,6 +25,14 @@ export default function Project() {
       id: "bot",
       title: "Bot",
     },
+    {
+      id: "mobile",
+      title: "mobile",
+    },
+    {
+      id: "machine-learning",
+      title: "machine-learning",
+    },
   ];
 
   useEffect(() => {
@@ -38,6 +46,12 @@ export default function Project() {
       case "bot":
         setData(bot);
         break;
+      case "mobile":
+        setData(mobile);
+        break;
+        case "machine-learning":
+          setData(ml);
+          break;
 
       default:
         setData(All);
@@ -56,16 +70,20 @@ export default function Project() {
     about,
     date,
     moreinfo,
+    hoverText,
   }) => {
     return (
       <a href={link} id={id} type={type} className="w-full md:px-6">
         <div className="relative overflow-hidden">
           <div className="">
-            <img
-              src={imgUrl}
-              alt="portfolio"
-              className="transform hover:scale-125 w-full h-60 transition duration-2000 ease-out object-cover"
-            />
+            {" "}
+            <Tooltip title={hoverText}>
+              <img
+                src={imgUrl}
+                alt="portfolio"
+                className="transform hover:scale-125 w-full h-60 transition duration-2000 ease-out object-cover"
+              />
+            </Tooltip>
           </div>
         </div>
         <div className="mt-4 md:mt-6">
@@ -117,7 +135,7 @@ export default function Project() {
       </Head>
       <section className="bg-[#070738]">
         <div className="mt-10 px-24 sm:px-36 lg:px-48">
-        <BackNavigate />
+          <BackNavigate />
         </div>
         <div className="bg-[#070738]">
           <h1 className="font-homemade text-3xl xl:pl-48 lg:text-7xl font-bold py-4 lg:py-12 text-center md:text-left">
@@ -156,6 +174,7 @@ export default function Project() {
                 date={p.date}
                 award={p.award}
                 moreinfo={p.moreinfo}
+                hoverText={p.hoverText}
               />
             ))}
           </div>

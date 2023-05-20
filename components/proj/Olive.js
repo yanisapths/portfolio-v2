@@ -9,26 +9,14 @@ import { ExternalLinkIcon } from "@heroicons/react/solid";
 import IndexContent from "./IndexContent";
 
 function Olive() {
-  const handleScroll = (e) => {
-    // first prevent the default behavior
-    e.preventDefault();
-    // get the href and remove everything before the hash (#)
-    const href = e.currentTarget.href;
-    const targetId = href.replace(/.*\#/, "");
-    // get the element by id and use scrollIntoView
-    const elem = document.getElementById(targetId);
-    elem?.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
   return (
     <section className="px-12 bg-[#f8f8f8] text-[#121212]">
       <div className="max-w-8xl mx-auto overflow-hidden xl:max-w-4xl pb-20">
         <div className="md:flex">
-          <div className="invisible md:visible w-2/6">
+          {/* <div className="invisible md:visible w-2/6">
             {" "}
             <IndexContent handleScroll={handleScroll} />
-          </div>
+          </div> */}
           <div className="w-full md:w-4/6">
             <div className="pt-10">
               <BackNavigate light={true} />

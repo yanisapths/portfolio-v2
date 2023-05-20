@@ -19,6 +19,43 @@ export const All = [
     type: "Development",
     tool: "Next.js ★  MongoDB ★ Express ★ Tailwind CSS",
     moreinfo: "Read more...",
+    hoverText: "View process",
+  },
+  {
+    id: 5,
+    link: "https://github.com/yanisapths/happyelders-customer",
+    title: "Daycare Flutter App",
+    imgUrl: "/asset/mobile/ol-poster-wide.png",
+    type: "mobile",
+    tool: "Figma",
+    date: "2022",
+    hoverText: "View on Github",
+    tech: [{ name: "Flutter" }, { name: "LINE SDK" }, { name: "Firebase" }],
+    about: "Proof of concept for a survey project.",
+  },
+  {
+    id: 4,
+    link: "https://github.com/yanisapths/TipTime",
+    title: "Calculate the tip",
+    imgUrl: "/asset/mobile/tiptime-poster-wide.png",
+    type: "mobile",
+    tool: "Figma",
+    date: "2022",
+    hoverText: "View on Github",
+    tech: [{ name: "Android Studio" }, { name: "Kotlin" }],
+    about: "Basic android-kotlin training.",
+  },
+  {
+    id: 6,
+    link: "https://github.com/yanisapths/self-driving-car",
+    title: "Self-Driving car",
+    imgUrl: "/asset/ml/self-driving-wide.png",
+    type: "ml",
+    date: "2023",
+    hoverText: "View on Github",
+    tech: [{ name: "JS" }, { name: "HTML/CSS" }],
+    about:
+      "Self-Driving Car with JavaScript Course – Neural Networks and Machine Learning by Dr. Radu Mariescu-Istodor",
   },
   {
     id: 1,
@@ -39,6 +76,7 @@ export const All = [
     imgUrl: "/asset/discord-bot.png",
     type: "Development",
     date: "December 2022",
+    hoverText: "Read on Medium",
     tech: [
       { name: "Discord API" },
       { name: " Python" },
@@ -74,6 +112,7 @@ export const design = [
     type: "Development",
     tool: "Next.js ★  MongoDB ★ Express ★ Tailwind CSS",
     moreinfo: "Read more...",
+    hoverText: "View process",
   },
   {
     id: 1,
@@ -109,6 +148,7 @@ export const dev = [
     type: "Development",
     tool: "Next.js ★  MongoDB ★ Express ★ Tailwind CSS",
     moreinfo: "Read more...",
+    hoverText: "View process",
   },
   {
     id: 2,
@@ -117,6 +157,7 @@ export const dev = [
     imgUrl: "/asset/discord-bot.png",
     type: "Development",
     date: "December 2022",
+    hoverText: "Read on Medium",
     tech: [
       { name: "Discord API" },
       { name: " Python" },
@@ -139,6 +180,7 @@ export const bot = [
     imgUrl: "/asset/discord-bot.png",
     type: "Development",
     date: "December 2022",
+    hoverText: "Read on Medium",
     tech: [
       { name: "Discord API" },
       { name: " Python" },
@@ -150,5 +192,47 @@ export const bot = [
     link: "",
     tool: "Django DRF ★ Python ★ Heroku",
     moreinfo: "Read on Medium",
+  },
+];
+
+export const mobile = [
+  {
+    id: 1,
+    link: "https://github.com/yanisapths/TipTime",
+    title: "Calculate the tip",
+    imgUrl: "/asset/mobile/tiptime-poster-wide.png",
+    type: "mobile",
+    tool: "Figma",
+    date: "2022",
+    hoverText: "View on Github",
+    tech: [{ name: "Android Studio" }, { name: "Kotlin" }],
+    about: "Basic android-kotlin training.",
+  },
+  {
+    id: 2,
+    link: "https://github.com/yanisapths/happyelders-customer",
+    title: "Daycare Flutter App",
+    imgUrl: "/asset/mobile/ol-poster-wide.png",
+    type: "mobile",
+    tool: "Figma",
+    date: "2022",
+    hoverText: "View on Github",
+    tech: [{ name: "Flutter" }, { name: "LINE SDK" }, { name: "Firebase" }],
+    about: "Proof of concept for a survey project.",
+  },
+];
+
+export const ml = [
+  {
+    id: 1,
+    link: "https://github.com/yanisapths/self-driving-car",
+    title: "Self-Driving car",
+    imgUrl: "/asset/ml/self-driving-wide.png",
+    type: "ml",
+    date: "2023",
+    hoverText: "View on Github",
+    tech: [{ name: "JS" }, { name: "HTML/CSS" }],
+    about:
+      "Self-Driving Car with JavaScript Course – Neural Networks and Machine Learning by Dr. Radu Mariescu-Istodor",
   },
 ];

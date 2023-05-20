@@ -10,6 +10,20 @@ function FeaturedProjects() {
   const navigate = () => {
     router.push("/projects/oliveplatform");
   };
+  const p0 = {
+    title: "Self-Driving car",
+    date: "2023",
+    tech: [
+      { name: "JS" },
+      { name: "HTML/CSS" },
+      { name: "Machine Learning " },
+      { name: "Neural Networks" },
+    ],
+    about:
+      "Self-Driving Car with JavaScript Course – Neural Networks and Machine Learning by Dr. Radu Mariescu-Istodor",
+    link: "https://self-driving-car-yanisapths.netlify.app/",
+    pic: "/asset/ml/self-driving-wide.png",
+  };
   const p1 = {
     title: "Physical Therapy Service Management Platform",
     date: "November 2022 - April 2023",
@@ -26,8 +40,16 @@ function FeaturedProjects() {
     caption: "Desktop / Mobile",
     pic: "/asset/preview1.png",
   };
-
   const p2 = {
+    title: "Daycare Flutter App (Proof of concept)",
+    date: "2022",
+    tech: [{ name: "Flutter" }, { name: "LINE SDK" }, { name: "Firebase" }],
+    about:
+      "A proof of concept of a survey project which improved my Flutter skills. It contains login, homepage, show lists and detail of places fetched from API (Express.js,Node.js). I use LINE SDK for login and did a release version on Firebase App Distribution.",
+    link: "",
+    pic: "/asset/mobile/ol-poster-wide.png",
+  };
+  const p3 = {
     title: "Discord Quiz Bot",
     date: "December 2022",
     tech: [
@@ -41,7 +63,7 @@ function FeaturedProjects() {
     link: "",
     pic: "/asset/discord-bot.png",
   };
-  const p3 = {
+  const p4 = {
     title: "Learning Quiz Web Design",
     date: "SE Course - 2022",
     tech: [{ name: "Figma" }],
@@ -103,18 +125,20 @@ function FeaturedProjects() {
               })}
             </div>
             <div className="py-3">
-            <a href="https://o-live.vercel.app" className="items-center flex gap-1 text-sm cursor-pointer text-sky-400 underline">
-            <p className="">
-                Live - Customer App (Olive)
-              </p>
-                <ExternalLinkIcon className="h-4 w-4"/>
-            </a>
-            <a href="https://daycare.vercel.app"  className="items-center gap-1 text-sm flex cursor-pointer text-sky-400 underline">
-            <p className="">
-              Live - PT Clinic Management App
-              </p>
-                <ExternalLinkIcon className="h-4 w-4"/>
-            </a>
+              <a
+                href="https://o-live.vercel.app"
+                className="items-center flex gap-1 text-sm cursor-pointer text-sky-400 underline"
+              >
+                <p className="">Live - Customer App (Olive)</p>
+                <ExternalLinkIcon className="h-4 w-4" />
+              </a>
+              <a
+                href="https://daycare.vercel.app"
+                className="items-center gap-1 text-sm flex cursor-pointer text-sky-400 underline"
+              >
+                <p className="">Live - PT Clinic Management App</p>
+                <ExternalLinkIcon className="h-4 w-4" />
+              </a>
             </div>
             <Link href="/projects/oliveplatform">
               <p className="cursor-pointer relative text-sm text-sky-400 font-medium before:absolute before:-bottom-1 before:h-0.5 before:w-24 before:origin-left before:scale-x-0 before:bg-sky-600 before:transition hover:before:scale-100">
@@ -124,22 +148,52 @@ function FeaturedProjects() {
           </div>
         </div>
 
-        {/* p2 */}
+        {/* p0 */}
         <div className="rounded-lg max-w-2xl mx-auto">
-          <div className="rounded-lg relative h-96 w-full">
+          <div className="relative h-96 w-full rounded-lg">
             <Image
               alt="Image"
-              src="/asset/discord-bot.png"
+              src="/asset/ml/self-driving-wide.png"
               layout="fill"
               objectFit="cover"
               className="rounded-lg"
             />
-            <a href="https://python.plainenglish.io/build-discord-quizbot-with-python-and-deploy-1-44dec1250a37">
-              <h3 className="cursor-pointer absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl  md:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-6 lg:py-3 px-2 md:px-4 md:py-3  hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
-                Read on Medium
-                <ExternalLinkIcon className="inline-flex h- w-7 pl-2 mb-2 cursor-pointer transform " />
-              </h3>
+          </div>
+          <div className="mt-6">
+            <h2 className="text-xl font-bold text-white">{p0.title}</h2>
+
+            <p className="text-sm text-gray-300">{p0.date}</p>
+            <p className="mt-4 text-white">{p0.about}</p>
+
+            <div className="mt-4 pb-1 flex flex-wrap">
+              {p0.tech.map((t) => {
+                return (
+                  <span key={t} className="chip">
+                    {t.name}
+                  </span>
+                );
+              })}
+            </div>
+            <a
+              href="https://self-driving-car-yanisapths.netlify.app/"
+              className="cursor-pointer relative text-sm text-sky-400 font-medium before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-sky-600 before:transition hover:before:scale-100"
+            >
+              View on website
             </a>
+          </div>
+        </div>
+        {/* p0 */}
+
+        {/* p2 */}
+        <div className="rounded-lg max-w-2xl mx-auto">
+          <div className="relative h-96 w-full rounded-lg">
+            <Image
+              alt="Image"
+              src="/asset/mobile/ol-poster-wide.png"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
           </div>
           <div className="mt-6">
             <h2 className="text-xl font-bold text-white">{p2.title}</h2>
@@ -157,10 +211,10 @@ function FeaturedProjects() {
               })}
             </div>
             <a
-              href="https://python.plainenglish.io/build-discord-quizbot-with-python-and-deploy-1-44dec1250a37"
+              href="https://github.com/yanisapths/happyelders-customer"
               className="cursor-pointer relative text-sm text-sky-400 font-medium before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-sky-600 before:transition hover:before:scale-100"
             >
-              Read on Medium
+              View on Github
             </a>
           </div>
         </div>
@@ -168,14 +222,20 @@ function FeaturedProjects() {
 
         {/* p3 */}
         <div className="rounded-lg max-w-2xl mx-auto">
-          <div className="relative h-96 w-full rounded-lg">
+          <div className="rounded-lg relative h-96 w-full">
             <Image
               alt="Image"
-              src="/asset/SE-design.png"
+              src="/asset/discord-bot.png"
               layout="fill"
               objectFit="cover"
               className="rounded-lg"
             />
+            <a href="https://python.plainenglish.io/build-discord-quizbot-with-python-and-deploy-1-44dec1250a37">
+              <h3 className="cursor-pointer absolute top-10 left-5 text-[#ffffff] font-bold lg:text-xl  md:text-xl bg-black/50 shadow-2xl shadow-white border-2 rounded-full lg:px-6 lg:py-3 px-2 md:px-4 md:py-3  hover:bg-[#ffffff] hover:border-2 hover:text-indigo-400">
+                Read on Medium
+                <ExternalLinkIcon className="inline-flex h- w-7 pl-2 mb-2 cursor-pointer transform " />
+              </h3>
+            </a>
           </div>
           <div className="mt-6">
             <h2 className="text-xl font-bold text-white">{p3.title}</h2>
@@ -193,14 +253,44 @@ function FeaturedProjects() {
               })}
             </div>
             <a
-              href="#"
+              href="https://python.plainenglish.io/build-discord-quizbot-with-python-and-deploy-1-44dec1250a37"
               className="cursor-pointer relative text-sm text-sky-400 font-medium before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-sky-600 before:transition hover:before:scale-100"
             >
-              Read More...
+              Read on Medium
             </a>
           </div>
         </div>
         {/* p3 */}
+
+        {/* p4 */}
+        <div className="rounded-lg max-w-2xl mx-auto">
+          <div className="relative h-96 w-full rounded-lg">
+            <Image
+              alt="Image"
+              src="/asset/SE-design.png"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
+          </div>
+          <div className="mt-6">
+            <h2 className="text-xl font-bold text-white">{p4.title}</h2>
+
+            <p className="text-sm text-gray-300">{p4.date}</p>
+            <p className="mt-4 text-white">{p4.about}</p>
+
+            <div className="mt-4 pb-1 flex flex-wrap">
+              {p4.tech.map((t) => {
+                return (
+                  <span key={t} className="chip">
+                    {t.name}
+                  </span>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+        {/* p4 */}
       </div>
     </section>
   );
