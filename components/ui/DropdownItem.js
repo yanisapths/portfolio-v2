@@ -19,7 +19,7 @@ const DropdownItem = ({ handleScroll }) => {
       <nav className="flex text-sm items-center justify-between py-3 px-8 md:px-16 lg:px-24 xl:px-32">
         <div className="text-lg font-bold">Contents</div>
         <IconButton
-          className="block md:hidden"
+          className="block md:hidden lg:hidden xl:hidden"
           color="inherit"
           onClick={handleClick}
         >
@@ -29,6 +29,7 @@ const DropdownItem = ({ handleScroll }) => {
           anchorEl={anchorEl}
           open={Boolean(anchorEl)}
           onClose={handleClose}
+
           sx={
             {  "& .MuiMenu-paper": 
               { backgroundColor: "black", color: "white",width:"100%"}, 
