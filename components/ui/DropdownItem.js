@@ -19,11 +19,11 @@ const DropdownItem = ({ handleScroll }) => {
       <nav className="flex text-sm items-center justify-between py-3 px-8 md:px-16 lg:px-24 xl:px-32">
         <div className="text-lg font-bold">Contents</div>
         <IconButton
-          className="block"
+          className="block md:invisible"
           color="inherit"
           onClick={handleClick}
         >
-          <MenuIcon className="md:hidden lg:hidden xl:hidden" />
+          <MenuIcon className="md:invisible" />
         </IconButton>
         <Menu
           anchorEl={anchorEl}
