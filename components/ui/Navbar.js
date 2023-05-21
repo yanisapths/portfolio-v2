@@ -12,7 +12,7 @@ function  Navbar() {
   };
 
   return (
-    <nav className="sticky flex items-center justify-between flex-wrap p-6 top-0 z-40  backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06]  supports-backdrop-blur:bg-white/60 dark:bg-transparent shadow-lg shadow-indigo-800">
+    <nav className="sticky z-50 flex items-center justify-between flex-wrap p-6 top-0 backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06]  supports-backdrop-blur:bg-white/60 dark:bg-transparent shadow-lg shadow-indigo-800">
       <div className="flex items-center flex-shrink-0 text-white">
       <Link href="/" ><Image src='/logo.png' width='54' height='54' className="cursor-pointer" /></Link>
       </div>

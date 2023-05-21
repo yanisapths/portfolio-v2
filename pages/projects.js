@@ -147,7 +147,7 @@ export default function Project() {
         {/* Grid starts here */}
         <div className="bg-[#070738]">
           <div className="items-center">
-            <div className="mx-16 w-60 lg:w-auto md:w-96 grid grid-cols-2 lg:flex justify-center lg:gap-3 mt-8">
+            <div className="mx-16 w-60 lg:w-auto grid grid-cols-2 lg:flex justify-center lg:gap-3 mt-8">
               {list.map((item) => (
                 <ProjectList
                   title={item.title}

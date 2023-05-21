@@ -15,9 +15,9 @@ const DropdownItem = ({ handleScroll }) => {
   };
 
   return (
-    <header className="fixed top-24 md:top-28 z-50 w-full bg-black shadow-xl">
-      <nav className="flex text-sm items-center justify-between py-3 px-8 md:px-16 lg:px-24 xl:px-32">
-        <div className="text-lg font-bold">Contents</div>
+    <header className="fixed bottom-0 z-50 w-full bg-black shadow-xl">
+      <nav className="flex text-xs items-center justify-between py-[0.1px] px-8 md:px-16 lg:px-24 xl:px-32">
+        <div className="text-xs font-bold">Contents</div>
         <IconButton
           className="block"
           color="inherit"
@@ -57,7 +57,7 @@ const DropdownItem = ({ handleScroll }) => {
             <Link href="#section-4">5.Media</Link>
           </MenuItem>
         </Menu>
-        <ul className="hidden md:flex md:items-center md:w-auto">
+        <ul className="hidden text-xs md:flex md:items-center md:w-auto">
           <li className="text-gray-100 hover:text-gray-300 font-medium mt-3 md:mt-0 md:ml-4">
             <Link href="#section-0" onClick={handleScroll}>
               1. Overview

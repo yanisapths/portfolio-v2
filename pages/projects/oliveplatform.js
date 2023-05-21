@@ -24,8 +24,8 @@ function oliveplatform() {
               <title>Olive Platform | Yanisa Poongthaisong</title>
           </Head>
         <Banner />
-        <DropdownItem />
         <Olive handleScroll={handleScroll} />
+        <DropdownItem />
     </Layout>
   )
 }
